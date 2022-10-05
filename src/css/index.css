@@ -1,0 +1,58 @@
+body{
+    font-family:sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+img{
+    max-width: 100%;
+}
+
+.bg-header{
+    background: linear-gradient(90deg, #328D9D 0%, #00A3FE 100%);
+}
+
+.white{
+    color: #ffffff;
+}
+.absolute{
+    position: absolute;
+}
+.relative{
+    position: relative;
+}
+
+.dropdown-item{
+    padding: 10px 10px;
+}
+.banner{
+    position: relative;
+    top: 96px;
+}
+.text-banner{
+    position: relative;
+    bottom: 370px;
+    right: 260px;
+}
+ .btn-banner{
+    text-transform: uppercase;
+    background-color:#2f8ea2;
+    padding: 8px 16px;
+    border-radius: 8px ;
+    
+}
+.heading-banner{
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+.slogan{
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 16px 0 40px;
+}
+.btn-banner:hover{
+    background-color: #01a2fc;
+}
