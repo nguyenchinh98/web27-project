@@ -42,6 +42,7 @@ img{
     background-color:#2f8ea2;
     padding: 8px 16px;
     border-radius: 8px ;
+    border-style: none;
     
 }
 .heading-banner{
@@ -55,4 +56,52 @@ img{
 }
 .btn-banner:hover{
     background-color: #01a2fc;
+}
+.logo-item{
+    width: 60px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    border: 2px solid #328D9D;
+}
+
+.h3-heading{
+    color: #328D9D;
+    font-weight: 700;
+}
+.h2-heading{
+    color: #328D9D;
+    ;
+}
+.paragraph{
+    color: #555555;
+    font-weight: 600;
+
+}
+.bg-item{
+    background-color: #F7F7F7;
+}
+.heading-product{
+    color: #328D9D;
+    font-weight: 700;
+    border: 3px solid #328D9D;
+    padding: 8px;
+    text-align: center;
+}
+.rate{
+    color: #328D9D;
+}
+.price{
+    font-weight: 700;
+}
+.icon-bag{
+    font-size: 32px;
+    position: relative;
+    bottom: 64px;
+    left: 24px;
+}
+.read-all{
+    margin: 0 auto;
+    text-align: center;
 }
