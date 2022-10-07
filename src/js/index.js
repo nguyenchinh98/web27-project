@@ -1,7 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import $ from "jquery";
-import "bootstrap-icons/font/bootstrap-icons.css"
-
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "../css/index.css";
 import "../css/global.css";
 import "bootstrap/dist/js/bootstrap.min.js";

@@ -1,0 +1,41 @@
+.main-path{
+    text-decoration: none;
+    color: #328D9D;
+}
+.main-sub{
+    text-decoration: none;
+    color: #555555;
+}
+.amount-product{
+    padding: ;
+    
+}
+
+.sales-policy{
+    background-color: #328D9D;
+    margin-top: 24px;
+    padding: 8px 16px;
+    color: white;
+}
+.add-cart{
+    background-color: #109cde;
+    color: white;
+    text-align: center;
+    padding: 8px 10px;
+    font-weight: 700;
+}
+.add-cart:hover{
+    background-color: #1d7096;
+    cursor: pointer;
+}
+.buy-now{
+    background-color: rgb(25, 97, 108);
+    color: white;
+    text-align: center;
+    padding: 8px 10px;
+    font-weight: 700;
+}
+.buy-now:hover{
+    background-color: #0d424b;
+    cursor: pointer;
+}
