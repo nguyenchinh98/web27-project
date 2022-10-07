@@ -1,0 +1,58 @@
+.main-path{
+    text-decoration: none;
+    color: #328D9D;
+}
+.main-sub{
+    text-decoration: none;
+    color: #555555;
+}
+.list-title{
+    padding: 8px;
+    text-decoration: none;
+    color: #555555;
+    background-color: ;
+}
+.list-title:hover{
+    background-color: ;
+}
+.product-portfolio{
+    background-color:#328D9D;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px;
+}
+.circle{
+    text-decoration: none;
+    color: #328D9D;
+    font-size: 18px;
+    padding: 8px;
+}
+.circle-1{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+}
+.circle-link{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #328D9D;
+    border-radius: 50px;
+}
+
+.circle-link-1{
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 50px;
+    background-color: #328D9D;
+}
+.icon-arrow{
+    color:#328D9D;
+    font-size: 18px;
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+}

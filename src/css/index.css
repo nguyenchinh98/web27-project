@@ -77,7 +77,6 @@ img{
 .paragraph{
     color: #555555;
     font-weight: 600;
-
 }
 .bg-item{
     background-color: #F7F7F7;
@@ -95,13 +94,78 @@ img{
 .price{
     font-weight: 700;
 }
-.icon-bag{
-    font-size: 32px;
-    position: relative;
-    bottom: 64px;
-    left: 24px;
-}
+
 .read-all{
     margin: 0 auto;
     text-align: center;
+}
+.subject-shop{
+    color: #328D9D;
+}
+
+.text-about{
+    width: 900px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 210px;
+}
+.btn-blog{
+    padding: 8px 8px;
+    border-radius: 8px;
+}
+.btn-blog:hover{
+    color: white;
+    background-color: #328D9D;
+}
+
+.blog-item:hover{
+    box-shadow: 0 4px 8px 2px;
+}
+
+
+.footer-top{
+    background-color: #000000;
+
+}
+.icon-fb{
+    color:#00A3FE;
+    font-size: 24px;
+}
+.icon-ig{
+    color: palevioletred;
+    font-size: 24px;
+}
+.icon-tw{
+    color: aqua;
+    font-size: 24px;
+}
+
+.icon-ytb{
+    color: red;
+    font-size: 24px;
+}
+.footer-bottom{
+    background-color: #555555;
+    color: #ffffff;
+}
+.atm{
+    border: 1px solid none;
+    background-color: #848382;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+.feedback {
+    color:#328D9D;
+}
+.feedback:hover{
+    color: #F5A623;
+}
+.text-footer{
+    text-decoration: none;
+    color: #555555;
+}
+.text-footer:hover{
+    color: #328D9D;
 }
