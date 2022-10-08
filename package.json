@@ -12,8 +12,10 @@
     "vite": "^3.1.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "slick-carousel": "^1.8.1"
   }
 }
