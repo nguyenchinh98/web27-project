@@ -42,7 +42,7 @@ img {
     content: "";
     height: 4px;
     width: 0px;
-    background-color: red;
+    background-color:#4daba8;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -51,9 +51,6 @@ img {
 .nav-item:hover .ani-border::before{
     width: 100%;
 }
-
-
-
 
 .banner {
     margin-top: 96px;
@@ -84,7 +81,6 @@ img {
 @-webkit-keyframes textfly {
     from{
         opacity: 0;
-        
     }
     to{
         opacity: 1;
@@ -109,14 +105,12 @@ img {
     background-color: #01a2fc;
 }
 
-.service-item{
-    opacity: 0;
-    animation: textfly 4s forwards;
-}
-
 /* Tablet */
 
 @media (min-width:768px) and (max-width:1023px) {
+    .heading-banner{
+        font-size: 32px;
+    }
     .text-banner {
         top: 50%;
         transform: translateY(-50%);
@@ -197,6 +191,9 @@ img {
     .heading-about{
         font-size: 18px;
     }
+    .heading-feedback{
+        font-size: 18px;
+    }
 
 }
 
@@ -244,6 +241,53 @@ img {
     font-weight: 700;
 }
 
+
+
+.cart-product{
+    position: relative;
+}
+.thumnail-product{
+    transition: all 0.3s ease-in-out;
+}
+.cart-product:hover{
+    box-shadow: 1px 2px 3px 1px rgb(95, 138, 141);
+    border: 1px solid rgb(95, 138, 141);
+}
+.cart-product:hover .thumnail-product{
+    transform: scale(0.95);
+     
+}
+.cart-product:hover .icon-cart{
+    animation: iconFly 1s forwards;
+}
+.icon-cart:hover{
+    color: #328D9D;
+    transform: scale(1.1);
+}
+.icon-cart{
+    position: absolute;
+    font-size: 28px;
+    top: 30px;
+    left: 30px;
+    opacity: 0;
+    color: black;
+}
+
+
+@-webkit-keyframes iconFly{
+    from{
+        opacity: 0;
+        margin-left: -30px;
+
+    }
+    to{
+        opacity: 1;
+        margin-left: 5px;
+
+    }
+}
+
+
 .read-all {
     margin: 0 auto;
     text-align: center;
@@ -263,9 +307,32 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.about:hover .heading-about{
+    animation: textAboutFly 5s forwards;
+}
+.about:hover .description1-about{
+    animation: textAboutFly 3s forwards;
+    animation-delay: 1s;
+}
 
+.about:hover .description2-about{
+    animation: textAboutFly 3s forwards;
+    animation-delay: 2s;
+}
 .heading-about{
     text-shadow: 3px 3px rgba(41, 29, 29);
+   
+    
+}
+
+@-webkit-keyframes textAboutFly{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+
+    }
 }
 
 .btn-blog {
@@ -328,6 +395,7 @@ img {
     color: #F5A623;
 }
 
+
 .text-footer {
     text-decoration: none;
     color: #555555;
@@ -335,4 +403,8 @@ img {
 
 .text-footer:hover {
     color: #328D9D;
+}
+
+.text-feedback{
+    padding: 24px 0;
 }

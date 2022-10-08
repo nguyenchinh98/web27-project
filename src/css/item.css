@@ -1,41 +1,171 @@
-.main-path{
+.main-path {
     text-decoration: none;
     color: #328D9D;
 }
-.main-sub{
+
+.main-sub {
     text-decoration: none;
     color: #555555;
 }
-.amount-product{
-    padding: ;
-    
+
+.amount-product {
+    padding: 8px;
+    background-color: #328D9D;
+    font-size: 18px;
+    color: white;
 }
 
-.sales-policy{
+.ebb {
+    text-decoration: none;
+    padding: 8px 10px;
+    color: black;
+}
+
+.rise {
+    text-decoration: none;
+    padding: 8px 10px;
+    color: black;
+}
+
+.sales-policy {
     background-color: #328D9D;
     margin-top: 24px;
     padding: 8px 16px;
     color: white;
 }
-.add-cart{
+
+.add-cart {
     background-color: #109cde;
     color: white;
     text-align: center;
     padding: 8px 10px;
     font-weight: 700;
 }
-.add-cart:hover{
+
+.add-cart:hover {
     background-color: #1d7096;
     cursor: pointer;
 }
-.buy-now{
+
+.buy-now {
     background-color: rgb(25, 97, 108);
     color: white;
     text-align: center;
     padding: 8px 10px;
     font-weight: 700;
 }
-.buy-now:hover{
+
+.buy-now:hover {
     background-color: #0d424b;
     cursor: pointer;
+}
+
+.nav-tabs .nav-link.active {
+    background: #328D9D;
+    color: white;
+    border: 3px solid #328D9D;
+}
+
+.nav-tabs .nav-link {
+    color: #328D9D;
+    border: 3px solid #328D9D;
+    margin-right: 32px;
+}
+
+.average-rating {
+    font-size: 48px;
+    color: #F5A623;
+    font-weight: 700;
+}
+
+.rate-product {
+    margin: 32px 0;
+}
+
+.n-product {
+    background-color: #328D9D;
+    padding: 8px 16px;
+    color: white;
+}
+
+.warning {
+    width: 700px;
+    border: 1px dashed red;
+    padding: 8px 10px;
+    color: red;
+    text-align: center;
+    border-radius: 10px;
+    margin: 32px 0;
+}
+
+.circle {
+    text-decoration: none;
+    color: #328D9D;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.circle-1 {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.circle-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #328D9D;
+    border-radius: 50px;
+}
+
+.circle-link:hover .circle {
+    color: white;
+
+}
+
+.circle-link:hover {
+    background-color: #328D9D;
+}
+
+.circle-link-1 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 50px;
+    background-color: #328D9D;
+}
+
+.icon-arrow {
+    color: #328D9D;
+    font-size: 18px;
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.icon-arrow:hover {
+    background-color: #328D9D;
+}
+
+.icon-arrow:hover .bi {
+    color: white;
+}
+
+
+
+@media (max-width: 767px) {
+    .warning {
+        width: 500px;
+        border: 1px dashed red;
+        padding: 8px 10px;
+        color: red;
+        text-align: center;
+        border-radius: 10px;
+        margin: 32px 0;
+    }
+
+
 }

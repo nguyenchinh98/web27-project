@@ -28,6 +28,22 @@ img{
 .dropdown-item{
     padding: 10px 10px;
 }
+.ani-border{
+    position: relative;
+}
+.ani-border::before{
+    content: "";
+    height: 4px;
+    width: 0px;
+    background-color:#4daba8;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.nav-item:hover .ani-border::before{
+    width: 100%;
+}
 .bg-item{
     background-color: #F7F7F7;
 }
@@ -37,9 +53,55 @@ img{
 }
 .rate{
     color: #328D9D;
+    font-weight: 600;
 }
 .price{
     font-weight: 700;
+}
+
+
+
+.cart-product{
+    position: relative;
+}
+.thumnail-product{
+    transition: all 0.3s ease-in-out;
+}
+.cart-product:hover .thumnail-product{
+    transform: scale(0.95);  
+}
+
+.cart-product:hover{
+    box-shadow: 1px 2px 3px 1px rgb(95, 138, 141);
+    border: 1px solid rgb(95, 138, 141);
+}
+
+.cart-product:hover .icon-cart{
+    animation: iconFly 1s forwards;
+}
+.icon-cart:hover{
+    color: #328D9D;
+    transform: scale(1.1);
+}
+.icon-cart{
+    position: absolute;
+    font-size: 28px;
+    top: 30px;
+    left: 30px;
+    opacity: 0;
+    color: black;
+}
+@-webkit-keyframes iconFly{
+    from{
+        opacity: 0;
+        margin-left: -30px;
+
+    }
+    to{
+        opacity: 1;
+        margin-left: 5px;
+
+    }
 }
 
 
@@ -96,4 +158,8 @@ img{
 }
 .text-footer:hover{
     color: #328D9D;
+}
+
+.text-feedback{
+    padding: 24px 0;
 }
