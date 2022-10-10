@@ -9,3 +9,45 @@
     text-decoration: none;
     color: #555555;
 }
+.product-portfolio{
+    background-color:#328D9D;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px;
+    color: white;
+}
+.list-title{
+    padding: 8px;
+    text-decoration: none;
+    color: #555555;
+}
+.list-title:hover{
+    background-color: #849da2;
+    color: white;
+}
+.title-signup{
+    background-color: #849da2;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+.info-personal{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    padding-bottom: 8px;
+    font-weight: 700;
+}
+.continue-signup{
+    background-color: #328D9D;
+    padding: 10px 24px;
+    border-radius: 8px;
+    color: white;
+}
+.continue-signup:hover{
+    background-color: #11444d;
+    color: white;
+    cursor: pointer;
+
+}
+.signup-right{
+    border-left: 1px solid rgba(128, 128, 128, 0.3);
+}
