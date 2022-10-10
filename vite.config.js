@@ -16,6 +16,8 @@ export default defineConfig({
         pay: resolve(__dirname, "src/pay.html"),
         cart: resolve(__dirname, "src/cart.html"),
         contact: resolve(__dirname, "src/contact.html"),
+        signup: resolve(__dirname, "src/signup.html"),
+        signin: resolve(__dirname, "src/signin.html"),
       },
     },
   },

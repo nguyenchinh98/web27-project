@@ -9,3 +9,53 @@
     text-decoration: none;
     color: #555555;
 }
+
+.heading-blog{
+    font-size: 32px;
+    font-weight: 700;
+}
+.title-blog{
+    font-size: 48px;
+    font-family: Vollkorn;
+    line-height: 50px;
+    font-weight: 600;
+}
+.btn-blog{
+    padding: 12px 16px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+.btn-blog:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #328D9D;
+}
+.thumnail-blog{
+    border-radius: 100%;
+    width: 500px;
+}
+.bg-blog{
+    background-color: #81cddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+.page-2{
+    border: 1px solid;
+    width: 29px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 100%;
+    color: black;
+}
+.page-2:hover{
+    background-color: #328D9D;
+    color: white;
+}
+.page-1{
+    width: 29px;
+    background-color: #328D9D;
+    color: white;
+    border-radius: 100%;
+    font-size: 18px;
+    text-align: center;
+}
