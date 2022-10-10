@@ -17,6 +17,7 @@ export default defineConfig({
         contact: resolve(__dirname, "src/contact.html"),
         signup: resolve(__dirname, "src/signup.html"),
         signin: resolve(__dirname, "src/signin.html"),
+        blog: resolve(__dirname, "src/blog.html"),
       },
     },
   },
