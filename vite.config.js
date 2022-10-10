@@ -15,6 +15,7 @@ export default defineConfig({
         header: resolve(__dirname, "src/header.html"),
         pay: resolve(__dirname, "src/pay.html"),
         cart: resolve(__dirname, "src/cart.html"),
+        contact: resolve(__dirname, "src/contact.html"),
       },
     },
   },

@@ -1,0 +1,38 @@
+.path{
+    margin-top: 96px;
+}
+.main-path{
+    text-decoration: none;
+    color: #328D9D;
+}
+.main-sub{
+    text-decoration: none;
+    color: #555555;
+}
+.heading-contact{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+}
+.btn-send{
+    width: 100px;
+    background-color: #555555;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn-send:hover{
+    background-color: #328D9D;
+    cursor: pointer;
+    
+}
+@media (max-width:767px) {
+    .path{
+        margin-top: 115.29px;
+    }
+    
+}
+@media (min-width:768px) and (max-width:1023px){
+
+}

@@ -7,6 +7,9 @@
     text-decoration: none;
     color: #555555;
 }
+.path{
+    margin-top: 96px;
+}
 
 .amount-product {
     padding: 8px;
@@ -53,6 +56,7 @@
     text-align: center;
     padding: 8px 10px;
     font-weight: 700;
+    
 }
 
 .buy-now:hover {

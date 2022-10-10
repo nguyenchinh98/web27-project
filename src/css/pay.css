@@ -1,0 +1,94 @@
+
+.main-path {
+    text-decoration: none;
+    color: #328D9D;
+}
+
+.main-sub {
+    text-decoration: none;
+    color: #555555;
+}
+.path{
+    margin-top: 96px;
+}
+.path-cart{
+    color: #555555;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0.5;
+}
+.path-pay{
+    color: #328D9D;
+    font-weight: 500;
+    text-decoration: none   ;
+}
+.done{
+    color: #555555;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.font-24{
+    font-size: 24px;
+}
+
+.stt{
+    text-align: center;
+    width: 38px;
+    border-radius: 100%;
+    font-size: 24px;
+    background-color: #328D9D;
+    color: white;
+}
+.pay-product{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding: 10px 0;
+    opacity: 0.7;
+}
+.temporary{
+    border-bottom: 1px solid;
+    padding: 10px 0;
+}
+.total-money{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 10px 0;
+    font-weight: 600;
+}
+.apply{
+    background-color: gainsboro;
+    color: #555555;
+    text-align: center;
+    padding: 6px;
+}
+.apply:hover{
+    background-color: #153f47;
+    cursor: pointer;
+    color: white;
+}
+.service-charge{
+    opacity: 0.5;
+}
+.continue-order{
+    background-color: rgb(58, 122, 101);
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+.continue-order:hover{
+    background-color: #155a68;
+    cursor: pointer;
+}
+.make-pay{
+    background-color: #328D9D;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+.make-pay:hover{
+    background-color: #11444d;
+}
+
+.pay-cart{
+    border-bottom: 1px solid;
+}
