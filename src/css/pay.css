@@ -40,18 +40,18 @@
     color: white;
 }
 .pay-product{
-    border-bottom: 1px solid;
-    border-top: 1px solid;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
     padding: 10px 0;
     opacity: 0.7;
 }
 .temporary{
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
     padding: 10px 0;
 }
 .total-money{
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
     padding: 10px 0;
     font-weight: 600;
 }
@@ -71,9 +71,10 @@
 }
 .continue-order{
     background-color: rgb(58, 122, 101);
-    width: 300px;
+    width: 400px;
     text-align: center;
     padding: 10px;
+    border-radius: 8px;
 }
 .continue-order:hover{
     background-color: #155a68;
@@ -81,14 +82,29 @@
 }
 .make-pay{
     background-color: #328D9D;
-    width: 300px;
+    width: 400px;
     text-align: center;
     padding: 10px;
+    border-radius: 8px;
 }
 .make-pay:hover{
     background-color: #11444d;
 }
 
 .pay-cart{
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    padding-bottom: 8px;
+}
+
+@media (max-width:767px) {
+    .path {
+        margin-top: 115.29px;
+    }
+
+    .path-cart,
+    .path-pay,
+    .done {
+        font-size: 18px;
+    }
+    
 }

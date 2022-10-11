@@ -53,3 +53,13 @@
 .p-signin{
      padding: 24px 30px;
 }
+@media (max-width:767px) {
+    .path{
+        margin-top: 115.29px;
+    }
+    
+}
+@media (min-width:768px) and (max-width:1023px) {
+    
+    
+}

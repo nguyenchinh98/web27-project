@@ -1,45 +1,53 @@
-.path{
+.path {
     margin-top: 96px;
 }
-.main-path{
+
+.main-path {
     text-decoration: none;
     color: #328D9D;
 }
-.main-sub{
+
+.main-sub {
     text-decoration: none;
     color: #555555;
 }
 
-.heading-blog{
+.heading-blog {
     font-size: 32px;
     font-weight: 700;
 }
-.title-blog{
+
+.title-blog {
     font-size: 48px;
     font-family: Vollkorn;
     line-height: 50px;
     font-weight: 600;
 }
-.btn-blog{
+
+.btn-blog {
     padding: 12px 16px;
     border: 1px solid;
     border-radius: 8px;
 }
-.btn-blog:hover{
+
+.btn-blog:hover {
     color: white;
     cursor: pointer;
     background-color: #328D9D;
 }
-.thumnail-blog{
+
+.thumnail-blog {
     border-radius: 100%;
     width: 500px;
 }
-.bg-blog{
+
+.bg-blog {
     background-color: #81cddd;
     padding: 10px;
     border-radius: 8px;
 }
-.page-2{
+
+.page-2 {
     border: 1px solid;
     width: 29px;
     text-align: center;
@@ -47,15 +55,43 @@
     border-radius: 100%;
     color: black;
 }
-.page-2:hover{
+
+.page-2:hover {
     background-color: #328D9D;
     color: white;
 }
-.page-1{
+
+.page-1 {
     width: 29px;
     background-color: #328D9D;
     color: white;
     border-radius: 100%;
     font-size: 18px;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    .path {
+        margin-top: 119.29px;
+
+    }
+
+    .heading-blog {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .title-blog {
+        font-size: 28px;
+        font-family: Vollkorn;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .btn-blog {
+        padding: 5px 10px;
+        border: 1px solid;
+        border-radius: 8px;
+    }
+
 }
