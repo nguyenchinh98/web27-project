@@ -41,15 +41,19 @@
 }
 
 .continue-order {
-    color: #328D9D;
-    border: 1px solid #328D9D;
+    background-color: #329d7f;
+    color: white;
     padding: 8px 0px;
     width: 350px;
 }
+/* .continue-product{
+    color: #328D9D;
+    text-decoration: none;
+} */
+
 
 .continue-order:hover {
-    background-color: #328D9D;
-    color: white;
+    background-color: #213d42;
     cursor: pointer;
 }
 
