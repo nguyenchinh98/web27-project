@@ -68,7 +68,6 @@ img {
     padding: 8px 16px;
     border-radius: 8px;
     border-style: none;
-
 }
 
 .heading-banner {
@@ -239,6 +238,15 @@ img {
 
 .price {
     font-weight: 700;
+}
+.btn-product{
+    background-color: #2f8ea2;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+}
+.btn-product:hover{
+    background-color: #01a2fc;
 }
 
 
