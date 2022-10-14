@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.min.js";
 import $ from "jquery";
 import "../css/index.css";
 import "../css/global.css";
+import "./backtop.js"
 
 $(document).ready(function () {
   $(".list-blog").slick({
@@ -40,3 +41,5 @@ $(document).ready(function () {
     ],
   });
 });
+
+

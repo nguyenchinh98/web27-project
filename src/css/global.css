@@ -1,5 +1,5 @@
 body{
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 *{
     box-sizing: border-box;
@@ -25,8 +25,40 @@ img{
     position: relative;
 }
 
+#mani-menu li{
+    position: relative;
+}
+
+#main-menu ul.sub-menu{
+    position:absolute;
+    list-style: none;
+    display: none;
+    background-color: #f2f0f0;
+    padding: 0;
+    width: 180px;
+    top: 68px;
+    border-radius: 8px;
+}
+#main-menu ul.sub-menu a{
+    border-bottom: 1px solid #d1cbcb;
+}
+#main-menu ul.sub-menu li:last-child a{
+    border: none;
+}
+#main-menu li:hover ul.sub-menu{
+    display: block;
+}
+
 .dropdown-item{
     padding: 10px 10px;
+}
+.dropdown-item:hover{
+    background-color: #328D9D;
+    color: white;
+}
+.icon-size{
+    font-size: 12px;
+    padding-left: 8px;
 }
 .ani-border{
     position: relative;
@@ -60,15 +92,18 @@ img{
 }
 
 
-
 .cart-product{
     position: relative;
+    overflow: hidden;
 }
-.thumnail-product{
+.thumnail-product img{
     transition: all 0.3s ease-in-out;
+    min-width: 100%;
 }
 .cart-product:hover .thumnail-product{
-    transform: scale(0.95);  
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    transform-origin: bottom left;  
 }
 
 .cart-product:hover{
@@ -77,7 +112,7 @@ img{
 }
 
 .cart-product:hover .icon-cart{
-    animation: iconFly 1s forwards;
+    animation: iconFly 0.5s forwards;
 }
 .icon-cart:hover{
     color: #328D9D;
@@ -99,7 +134,7 @@ img{
     }
     to{
         opacity: 1;
-        margin-left: 5px;
+        margin-left: -5px;
 
     }
 }
@@ -162,4 +197,21 @@ img{
 
 .text-feedback{
     padding: 24px 0;
+}
+
+
+#backtop{
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #328D9D;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
 }

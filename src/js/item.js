@@ -5,3 +5,4 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "../css/global.css";
 import "../css/item.css";
+import "./backtop.js";
