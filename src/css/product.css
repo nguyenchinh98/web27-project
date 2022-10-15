@@ -26,9 +26,9 @@
 } */
 .product-portfolio{
     background-color:#328D9D;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    padding: 8px;
+    padding: 8px 4px;
 }
 .circle{
     text-decoration: none;
@@ -127,8 +127,9 @@
 
     .main-menu li a {
         display: block;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 700;
+        margin: 0 8px;
     }
 
     .icon-header>.dropdown {
@@ -141,8 +142,9 @@
 
     .main-menu li a {
         display: block;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 700;
+        margin: 0 16px;
     }
 
     .icon-header>.dropdown {

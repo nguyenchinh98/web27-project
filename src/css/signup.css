@@ -1,66 +1,226 @@
-.path{
-    margin-top: 96px;
-}
-.main-path{
+.main-path {
     text-decoration: none;
     color: #328D9D;
 }
-.main-sub{
+
+.main-sub {
     text-decoration: none;
     color: #555555;
 }
-.product-portfolio{
-    background-color:#328D9D;
-    font-size: 18px;
+
+.product-portfolio {
+    background-color: #328D9D;
+    font-size: 14px;
     font-weight: 600;
     padding: 8px;
     color: white;
 }
-.list-title{
+
+.list-title {
     padding: 8px;
     text-decoration: none;
     color: #555555;
 }
-.list-title:hover{
+
+.list-title:hover {
     background-color: #849da2;
     color: white;
 }
-.title-signup{
+
+.title-signup {
     background-color: #849da2;
     color: white;
     text-decoration: none;
     padding: 8px;
 }
-.info-personal{
+
+.info-personal {
     border-bottom: 1px solid rgba(128, 128, 128, 0.3);
     padding-bottom: 8px;
     font-weight: 700;
 }
-.continue-signup{
+
+.continue-signup {
     background-color: #328D9D;
     padding: 10px 24px;
     border-radius: 8px;
     color: white;
 }
-.continue-signup:hover{
+
+.continue-signup:hover {
     background-color: #11444d;
     color: white;
     cursor: pointer;
 
 }
-.signup-right{
+
+.signup-right {
     border-left: 1px solid rgba(128, 128, 128, 0.3);
 }
 
-@media (min-width:768px) and (max-width:1023px) {
-    
+/* Mobile */
+@media screen and (min-width:390px) {
+
+    .main-menu li a {
+        display: none;
+    }
+
+    .icon-header>.dropdown {
+        display: none;
+    }
+
+    .path {
+        margin-top: 56.36px;
+        padding: px;
+    }
+
+
+    .main-path,
+    .main-sub {
+        font-size: 14px;
+    }
+
+    .heading-feedback {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 12px;
+
+    }
+
+    .product-portfolio {
+        background-color: #328D9D;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 8px;
+        color: white;
+    }
+
+    .list-title {
+        padding: 8px;
+        text-decoration: none;
+        color: #555555;
+    }
+
+    .list-title:hover {
+        background-color: #849da2;
+        color: white;
+    }
+
+    .title-signup {
+        background-color: #849da2;
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+    }
+
+    .info-personal {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+        padding-bottom: 8px;
+        font-weight: 700;
+    }
+
+    .continue-signup {
+        background-color: #328D9D;
+        padding: 10px 24px;
+        border-radius: 8px;
+        color: white;
+    }
+
+    .continue-signup:hover {
+        background-color: #11444d;
+        color: white;
+        cursor: pointer;
+
+    }
+
+    .signup-right {
+        border-left: none;
+    }
+
 }
-@media (max-width:767px) {
-    .path{
-        margin-top: 115.29px;
+
+/* Tablet-Mini */
+
+@media (min-width: 768px) {
+    .main-menu li a {
+        display: none;
     }
-    .name-signup{
-        display: flex;
+
+    .icon-header>.dropdown {
+        display: none;
     }
-    
+
+    .path {
+        margin-top: 77.82px;
+        padding: px;
+    }
+
+    .main-path,
+    .main-sub {
+        font-size: 14px;
+    }
+
+    .heading-feedback {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 14px;
+
+    }
+}
+
+/* Tablet */
+@media (min-width:990px) {
+    .path {
+        margin-top: 88px;
+        padding: px;
+    }
+
+    .main-menu li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 8px;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+
+    .main-path,
+    .main-sub {
+        font-size: 16px;
+    }
+
+}
+
+/* Desktop */
+@media (min-width:1280px) {
+
+    .main-menu li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 16px;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+
+    .path {
+        margin-top: 88px;
+        padding: px;
+    }
+
+
+    .main-path,
+    .main-sub {
+        font-size: 16px;
+    }
+
+
 }
