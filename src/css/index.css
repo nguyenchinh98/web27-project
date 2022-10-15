@@ -284,7 +284,7 @@
         width: 200px;
         top: 50%;
         transform: translateY(-50%);
-        left: 20px;
+        left: 50px;
     }
 
     .btn-banner {
@@ -374,8 +374,64 @@
         font-size: 18px;
         padding: 8px;
     }
+    .text-footer-bottom{
+        font-size: 12px;
+    }
+    .atm{
+        font-size: 12px;
+    }
+    .title-footer{
+        font-size: 14px;
+    }
 }
 
+
+/* ****** */
+@media (min-width: 576px) {
+    .main-menu li a {
+        display: none;
+    }
+
+    .icon-header>.dropdown {
+        display: none;
+    }
+
+    .banner {
+        margin-top: 57.34px;
+    }
+
+    .heading-banner {
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+
+    .slogan {
+        font-size: 8px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin: 8px 0 15px;
+    }
+
+    .text-banner {
+        width: 400px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    .btn-banner {
+        text-transform: uppercase;
+        background-color: #2f8ea2;
+        padding: 6px;
+        border-radius: 6px;
+        border-style: none;
+        font-size: 8px;
+    }
+    .title-footer{
+        font-size: 14px;
+    }
+}
 /* Tablet-Mini */
 
 @media (min-width: 768px){
@@ -408,7 +464,7 @@
         width: 400px;
         top: 50%;
         transform: translateY(-50%);
-        left: 20px;
+        left: 80px;
     }
 
     .btn-banner {
@@ -502,7 +558,7 @@
         width: 400px;
         top: 50%;
         transform: translateY(-50%);
-        left: 50px;
+        left: 100px;
     }
 
     .btn-banner {
@@ -520,7 +576,7 @@
 
     .content-about {
         text-align: center;
-        width: 800px;
+        width: 850px;
         color: white;
         bottom: 0;
         left: 50%;
@@ -709,6 +765,7 @@
         display: block;
         font-size: 16px;
         font-weight: 700;
+        margin: 0 15px;
     }
 
     .icon-header>.dropdown {
