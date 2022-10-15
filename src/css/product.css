@@ -1,14 +1,14 @@
 .main-path{
     text-decoration: none;
     color: #328D9D;
+    font-size: 18px;
 }
 .main-sub{
     text-decoration: none;
     color: #555555;
+    font-size: 18px;
 }
-.path{
-    margin-top: 96px;
-}
+
 .list-title{
     padding: 8px;
     text-decoration: none;
@@ -79,9 +79,107 @@
     color: white;
 }
 
-@media (max-width:767px) {
-    .path{
-        margin-top: 115.29px;
+/* Mobile */
+@media screen and (min-width:390px) {
+
+    .main-menu li a {
+        display: none;
     }
-    
+
+    .icon-header>.dropdown {
+        display: none;
+    }
+
+    .path {
+        margin-top: 57.1px;
+        padding: 8px 0;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
+}
+
+/* Tablet-Mini - md */
+
+@media (min-width: 768px) {
+    .main-menu li a {
+        display: none;
+    }
+
+    .icon-header>.dropdown {
+        display: none;
+    }
+
+    .path {
+        margin-top: 77.81px;
+        padding: 8px;
+    }
+}
+
+/* Tablet - lg*/
+@media (min-width: 990px) {
+    .path {
+        margin-top: 88px;
+        padding: 8px;
+    }
+
+    .main-menu li a {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+}
+
+/* Desktop - xl */
+@media (min-width:1280px) {
+
+    .main-menu li a {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+
+    .path {
+        margin-top: 88px;
+        padding: 8px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
+}
+
+/* Full HD- xxl */
+@media (min-width: 1400px) {
+    .main-menu li a {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+
+    .path {
+        margin-top: 88px;
+        padding: 10px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
+
 }

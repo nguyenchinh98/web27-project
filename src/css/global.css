@@ -25,56 +25,91 @@ img{
     position: relative;
 }
 
-#mani-menu li{
+
+.main-menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 8px;
+}
+
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-menu li {
     position: relative;
 }
 
-#main-menu ul.sub-menu{
-    position:absolute;
+.main-menu ul.sub-menu {
+    position: absolute;
     list-style: none;
     display: none;
-    background-color: #f2f0f0;
+    background-color: rgb(233, 233, 233);
     padding: 0;
     width: 180px;
-    top: 68px;
+    top: 45px;
+    left: 15px;
     border-radius: 8px;
 }
-#main-menu ul.sub-menu a{
-    border-bottom: 1px solid #d1cbcb;
+
+
+.main-menu ul.sub-menu a {
+    border-bottom: 1px solid rgb(210, 205, 205);
+    padding: 8px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
 }
-#main-menu ul.sub-menu li:last-child a{
+
+.main-menu ul.sub-menu li:last-child a {
     border: none;
 }
-#main-menu li:hover ul.sub-menu{
+
+.main-menu li:hover ul.sub-menu {
     display: block;
 }
 
-.dropdown-item{
-    padding: 10px 10px;
-}
-.dropdown-item:hover{
+.sub-menu li:hover{
     background-color: #328D9D;
-    color: white;
 }
-.icon-size{
-    font-size: 12px;
-    padding-left: 8px;
-}
-.ani-border{
+
+.main-menu>li>a {
     position: relative;
 }
-.ani-border::before{
+
+.main-menu>li>a::before {
     content: "";
     height: 4px;
     width: 0px;
-    background-color:#0d3332;
+    background-color: #0d3332;
     position: absolute;
     bottom: 0px;
     left: 0px;
     transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.nav-item:hover .ani-border::before{
+
+.main-menu li:hover a::before {
     width: 100%;
+}
+
+.dropdown-item{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.dropdown-item:hover{
+    background-color: #328D9D;
+}
+.icon-dropdown{
+    font-size: 14px;
+}
+
+.dropdown-item{
+    padding: 10px 8px;
+    font-size: 14px;
 }
 .bg-item{
     background-color: #F7F7F7;
@@ -83,6 +118,10 @@ img{
     color: #555555;
     font-weight: 600;
 }
+
+
+/* Card-product */
+
 .rate{
     color: #328D9D;
     font-weight: 600;
@@ -92,6 +131,23 @@ img{
 }
 
 
+
+.heading-product {
+    color: #328D9D;
+    font-weight: 700;
+    border: 3px solid #328D9D;
+    padding: 8px;
+    text-align: center;
+}
+.btn-product {
+    background-color: #2f8ea2;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+}
+.btn-product:hover {
+    background-color: #01a2fc;
+}
 .cart-product{
     position: relative;
     overflow: hidden;
@@ -118,14 +174,14 @@ img{
     color: #328D9D;
     transform: scale(1.1);
 }
-.icon-cart{
-    position: absolute;
-    font-size: 28px;
-    top: 30px;
-    left: 30px;
-    opacity: 0;
-    color: black;
-}
+.icon-cart {
+        position: absolute;
+        font-size: 32px;
+        top: 30px;
+        left: 30px;
+        opacity: 0;
+        color: #cc9a4f;
+    }
 @-webkit-keyframes iconFly{
     from{
         opacity: 0;

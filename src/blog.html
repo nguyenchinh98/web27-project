@@ -9,71 +9,150 @@
 </head>
 
 <body>
-    <div class="bg-header fixed-top">
-        <div class="header">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a class="navbar-brand pt-0 pb-0" href="index.html">
-                        <img src="/img/logo1.png" alt="" />
-                    </a>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-1 gap-md-2 gap-xxl-4" id="main-menu">
-                            <li class="nav-item">
-                                <a class="nav-link active text-white text-uppercase fw-bolder ani-border"
-                                    aria-current="page" href="index.html">trang
-                                    chủ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-white text-uppercase fw-bolder ani-border"
-                                    aria-current="page" href="about.html">giới
-                                    thiệu</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a href="product.html" class="nav-link active ani-border text-light fw-bolder">
-                                    SẢN PHẨM
-                                    <i class="bi bi-caret-down-fill icon-size"></i>
+    <div id="header">
+        <div class="bg-header container-fluid fixed-top">
+            <div class="container py-1 ">
+                <div class="row d-flex align-items-center ">
+                    <div class="logo-shop col-2">
+                        <a href="index.html" class="">
+                            <img src="/img/logo1.png" alt="">
+                        </a>
+                    </div>
+                    <ul class="main-menu col-8 d-flex justify-content-center gap-3 gap-xxl-5 gap-lg-2">
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="about.html">GIỚI THIỆU
+    
+                            </a></li>
+                        <li>
+                            <a href="product.html">SẢN PHẨM
+                                <i class="bi bi-caret-down-fill icon-dropdown"></i>
+                            </a>
+                            <ul class="sub-menu">
+                                <li><a href="">Mũ lưỡi trai</a></li>
+                                <li><a href="">Mũ snapback</a></li>
+                                <li><a href="">Mũ bucket</a></li>
+                                <li><a href="">Mũ nồi beret</a></li>
+                                <li><a href="">Mũ len</a></li>
+                                <li><a href="">Mũ phớt</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">LIÊN HỆ</a></li>
+                    </ul>
+                    <div class="icon-header col-2 d-flex gap-xl-1 justify-content-end align-items-center">
+                        <div class="dropdown">
+                            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href=""><i class="bi bi-search white fs-4"></i></a>
+                            </button>
+                            <ul class="dropdown-menu p-0">
+                                <form action="">
+                                    <input type="search" name="" id="" placeholder="Tìm kiếm" class="p-2 rounded-2">
+                                </form>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href=""><i class="bi bi-person white fs-4"></i></a>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="signup.html">ĐĂNG KÝ</a></li>
+                                <li><a class="dropdown-item" href="signin.html">ĐĂNG NHẬP</a></li>
+                                <li><a class="dropdown-item" href="#">LỊCH SỬ MUA HÀNG</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                <i class="bi bi-cart3 white fs-4"></i>
+                            </button>
+    
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">GIỎ HÀNG</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <nav class="navbar d-xl-none d-block d-lg-none">
+                            <div class="container justify-content-end p-0">
+    
+                                <a class="" type="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                                    aria-controls="offcanvasNavbar">
+                                    <i class="bi bi-list text-light fs-4"></i>
                                 </a>
-                                <ul class="sub-menu">
-                                    <li><a class="dropdown-item" href="list_product.html">Mũ lưỡi trai</a></li>
-                                    <li><a class="dropdown-item" href="list1_product.html">Mũ snapback</a></li>
-                                    <li><a class="dropdown-item" href="#">Mũ bucket</a></li>
-                                    <li><a class="dropdown-item" href="#">Mũ nồi beret</a></li>
-                                    <li><a class="dropdown-item" href="#">Mũ len</a></li>
-                                    <li><a class="dropdown-item" href="#">Mũ phớt</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link active text-white text-uppercase fw-bolder ani-border"
-                                    aria-current="page" href="blog.html">blogs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-white text-uppercase fw-bolder ani-border"
-                                    aria-current="page" href="contact.html">liên hệ</a>
-                            </li>
-                        </ul>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                    aria-labelledby="offcanvasNavbarLabel">
+                                    <div class="offcanvas-header">
+                                        <a href=""><img src="/img/logo1.png" alt=""></a>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                            <li class="nav-item">
+                                                <a class="nav-link active fw-bold" aria-current="page" href="#">TRANG
+                                                    CHỦ</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active fw-bold" aria-current="page" href="#">GIỚI
+                                                    THIỆU</a>
+                                            </li>
+    
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link active dropdown-toggle fw-bold" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    SẢN PHẨM
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Mũ lưỡi trai</a></li>
+                                                    <li><a class="dropdown-item" href="#">Mũ Snapback</a></li>
+                                                    <li><a class="dropdown-item" href="#">Mũ Bucket</a></li>
+                                                    <li><a class="dropdown-item" href="#">Mũ Nồi Beret</a></li>
+                                                    <li><a class="dropdown-item" href="#">Mũ Len</a></li>
+                                                    <li><a class="dropdown-item" href="#">Mũ Phớt</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active fw-bold" aria-current="page" href="#">BLOG</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link active fw-bold" aria-current="page" href="#">LIÊN HỆ</a>
+                                            </li>
+                                            <div class="dropdown">
+    
+    
+                                                <button class="btn" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+    
+                                                    <a href=""><i class="bi bi-person white fs-4 text-dark"></i></a>
+                                                </button>
+                                                <ul class="dropdown-menu user">
+                                                    <li><a class="dropdown-item" href="signup.html">ĐĂNG KÝ</a></li>
+                                                    <li><a class="dropdown-item" href="signin.html">ĐĂNG NHẬP</a></li>
+                                                    <li><a class="dropdown-item" href="#">LỊCH SỬ MUA HÀNG</a></li>
+                                                </ul>
+                                            </div>
+                                        </ul>
+                                        <form class="d-flex mt-3" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                            <button class="btn btn-outline-success" type="submit">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-
-                    <div class="d-lg-flex d-md-flex gap-2 gap-md-3 gap-lg-4 gap-xxl-5">
-                        <div>
-                            <a href=""><i class="bi bi-person white fs-4"></i></a>
-                        </div>
-                        <div>
-                            <a href=""><i class="bi bi-cart3 white fs-4"></i></a>
-                        </div>
-                        <div>
-                            <a href=""><i class="bi bi-search white fs-4"></i></a>
-                        </div>
-                    </div>
-                </nav>
+                </div>
             </div>
         </div>
+    
     </div>
 
     <div class=" path bg-item ">
@@ -88,7 +167,7 @@
         </div>
 
         <div class="row align-items-center bg-blog">
-            <div class="col-7">
+            <div class="col-xxl-7 col-lg-7 col-md-7">
                 <div class="title-blog py-3">10 Cách phối đồ với áo ba lỗ nam tính và cuốn hút nhất</div>
                 <div class="paragraph">Cùng QCCap tham khảo ngay những cách phối đồ với áo ba lỗ nam tính và thu hút
                     nhất dưới đây nhé!
@@ -96,7 +175,7 @@
                 </div>
 
                 <div class="d-flex justify-content-between paragraph mt-xxl-5 mt-3 gap-2 align-items-center">
-                    <div class="d-flex gap-xxl-5 btn-blog align-items-center">
+                    <div class="d-flex gap-xxl-5 btn-blog align-items-center gap-3 gap-md-3 gap-lg-4">
                         <div>Đọc bài viết</div>
                         <i class="bi bi-arrow-right"></i>
                     </div>
@@ -106,37 +185,39 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 text-end py-5">
+            <div class="col-xxl-5 col-lg-5 col-md-5 text-end py-5">
                 <img src="/img/img-blog1.svg" alt="" class="thumnail-blog">
             </div>
         </div>
 
         <div class="row align-items-center bg-blog my-2">
-            <div class="col-5 text-end py-5">
+            <div class="col-xxl-5 col-lg-5 col-md-5 text-end py-5">
                 <img src="/img/img-blog2.svg" alt="" class="thumnail-blog">
             </div>
 
-            <div class="col-7">
+            <div class="col-xxl-7 col-lg-7 col-md-7">
                 <div class="title-blog py-3">Mũ tai bèo vành rộng Nam Nữ Classic cao cấp, thoáng khí</div>
                 <div class="paragraph">Bạn đang muốn tìm mua một chiếc mũ tai bèo vành rộng giúp che nắng hiệu quả và
                     trông thật thời trang. Cùng tham khảo ngay kiểu mũ tai bèo vành rộng của QCcap nhé!
                 </div>
                 <div class="d-flex justify-content-between paragraph mt-xxl-5 mt-3 gap-2 align-items-center">
-                    <div class="d-flex gap-xxl-5 btn-blog">
-                        <div>Đọc bài viết</div>
-                        <i class="bi bi-arrow-right"></i>
-                    </div>
 
                     <div>
-                    18/10/2022 bởi QCCap
+                        18/10/2022 bởi QCCap
                     </div>
+                    <div class="d-flex gap-xxl-5 btn-blog gap-3 gap-md-3 gap-lg-4">
+                        <i class="bi bi-arrow-left"></i> 
+                        <div>Đọc bài viết</div>
+                    </div>
+
+                    
                 </div>
             </div>
 
         </div>
 
         <div class="row align-items-center bg-blog">
-            <div class="col-7">
+            <div class="col-xxl-7 col-lg-7 col-md-7">
                 <div class="title-blog py-3">17 Cách chụp ảnh với mũ lưỡi trai “nghìn like kèm ảnh minh hoạ
                 </div>
                 <div class="paragraph">Bạn đang đau đầu tìm cách chụp ảnh với mũ lưỡi trai sao cho “chất nhất quả đất”?
@@ -144,7 +225,7 @@
                     QCCap nhé!
                 </div>
                 <div class="d-flex justify-content-between paragraph mt-xxl-5 mt-3 gap-2 align-items-center">
-                    <div class="d-flex gap-xxl-5 btn-blog align-items-center">
+                    <div class="d-flex gap-xxl-5 btn-blog align-items-center gap-md-3 gap-lg-4 gap-3">
                         <div>Đọc bài viết</div>
                         <i class="bi bi-arrow-right"></i>
                     </div>
@@ -154,30 +235,30 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 text-end py-5">
+            <div class="col-xxl-5 col-lg-5 col-md-5 text-end py-5">
                 <img src="/img/img-blog3.svg" alt="" class="thumnail-blog">
             </div>
         </div>
 
         <div class="row align-items-center bg-blog my-2">
-            <div class="col-5 text-end py-5">
+            <div class="col-xxl-5 col-lg-5 col-md-5 text-end py-5">
                 <img src="/img/img-blog4.svg" alt="" class="thumnail-blog">
             </div>
 
-            <div class="col-7">
+            <div class="col-xxl-7 col-lg-7 col-md-7">
                 <div class="title-blog py-3">4 Kiểu mũ mùa hè giúp bạn phối đồ chuẩn fashion</div>
                 <div class="paragraph">Không phải ngẫu nhiên mà mũ mùa hè trở thành từ khoá tìm kiếm mỗi khi trời trở
                     nắng. Dưới đây sẽ là những kiểu mũ mùa hè với khả năng chống nắng hiệu quả và dễ dàng phối đồ tạo
                     điểm nhấn phong cách cho riêng bạn. Cùng tham khảo ngay nhé!
                 </div>
                 <div class="d-flex justify-content-between paragraph mt-xxl-5 mt-3 gap-2 align-items-center">
-                    <div class="d-flex gap-xxl-5 btn-blog">
-                        <div>Đọc bài viết</div>
-                        <i class="bi bi-arrow-right"></i>
-                    </div>
 
                     <div>
                         10/10/2022 bởi QCCap
+                    </div>
+                    <div class="d-flex gap-xxl-5 btn-blog gap-3 gap-md-3 gap-lg-4">
+                        <i class="bi bi-arrow-left"></i>
+                        <div>Đọc bài viết</div>
                     </div>
                 </div>
             </div>
@@ -185,7 +266,7 @@
         </div>
 
         <div class="row align-items-center bg-blog">
-            <div class="col-7">
+            <div class="col-xxl-7 col-lg-7 col-md-7">
                 <div class="title-blog py-3">Top 5 Shop bán mũ bucket ở Hà Nội Đẹp, Uy tín
                 </div>
                 <div class="paragraph">QCCap xin giới thiệu đến bạn Top 5 shop bán mũ bucket ở Hà Nội đẹp, uy tín và chất lượng được đông đảo bạn trẻ Hà thành
@@ -193,7 +274,7 @@
                 nhé!
                 </div>
                 <div class="d-flex justify-content-between paragraph mt-xxl-5 mt-3 gap-2 align-items-center">
-                    <div class="d-flex gap-xxl-5 btn-blog align-items-center">
+                    <div class="d-flex gap-xxl-5 btn-blog align-items-center gap-md-3 gap-lg-4 gap-3">
                         <div>Đọc bài viết</div>
                         <i class="bi bi-arrow-right"></i>
                     </div>
@@ -203,29 +284,28 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 text-end py-5">
+            <div class="col-xxl-5 col-lg-5 col-md-5 text-end py-5">
                 <img src="/img/img-blog5.svg" alt="" class="thumnail-blog">
             </div>
         </div>
         
         <div class="row align-items-center bg-blog my-2">
-            <div class="col-5 text-end py-5">
+            <div class="col-xxl-5 col-lg-5 col-md-5 text-end py-5">
                 <img src="/img/img-blog7.svg" alt="" class="thumnail-blog">
             </div>
         
-            <div class="col-7">
+            <div class="col-xxl-7 col-lg-7 col-md-7">
                 <div class="title-blog py-3">Tóc ngắn mặc gì đẹp? Mách bạn cách phối đồ cực chất</div>
                 <div class="paragraph">Nếu đang tìm kiếm một outfit đủ ấn tượng cho câu hỏi “tóc ngắn mặc gì đẹp” nhưng cũng phải đủ thoải mái để vận động, bay
                 nhảy cả ngày thì đừng bỏ qua...
                 </div>
                 <div class="d-flex justify-content-between paragraph mt-xxl-5 mt-3 gap-2 align-items-center">
-                    <div class="d-flex gap-xxl-5 btn-blog">
-                        <div>Đọc bài viết</div>
-                        <i class="bi bi-arrow-right"></i>
-                    </div>
-        
                     <div>
                         25/09/2022 bởi QCCap
+                    </div>
+                    <div class="d-flex gap-xxl-5 btn-blog gap-3 gap-md-3 gap-lg-4">
+                        <i class="bi bi-arrow-left"></i>
+                        <div>Đọc bài viết</div>
                     </div>
                 </div>
             </div>

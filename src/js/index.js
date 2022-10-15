@@ -5,8 +5,8 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick.min.js";
 import $ from "jquery";
-import "../css/index.css";
 import "../css/global.css";
+import "../css/index.css";
 import "./backtop.js"
 
 $(document).ready(function () {

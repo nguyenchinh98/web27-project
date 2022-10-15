@@ -1,6 +1,4 @@
-.path{
-    margin-top: 96px;
-}
+
 .main-path{
     text-decoration: none;
     color: #328D9D;
@@ -12,4 +10,297 @@
 .heading-about{
     font-size: 32px;
     font-weight: 700;
+    padding-top: 20px;
+}
+
+
+
+
+
+/* Mobile */
+@media screen and (min-width:390px) {
+
+    .main-menu li a {
+        display: none;
+    }
+
+    .icon-header>.dropdown {
+        display: none;
+    }
+
+    .path {
+        margin-top: 56.36px;
+        padding: px;
+    }
+    
+    .about{
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .heading-about{
+        font-size: 6px;
+        padding: 6px;
+
+    }
+    hr{
+        size: 2px;
+        width: 20px;
+        height: 2px;
+    }
+    h4{
+        font-size: 6px;
+        padding: 0;
+        margin: 4px;
+    }
+    .heading-feedback{
+        font-size: 12px;
+        margin: 0px;
+    }
+    h6{
+        font-size: 10px;
+    }
+    .text-p{
+        font-size: 4px;
+        padding: 0;
+        margin: 2px;
+    }
+    .bg-about{
+        width: 100%;
+        height:px;
+    }
+    .logo-shops{
+        width: 50px;
+        padding-top: 0;
+    }
+    .main-path, .main-sub{
+        font-size: 12px;
+    }
+    
+}
+
+/* Tablet-Mini */
+
+@media (min-width: 768px){
+     .main-menu li a {
+        display: none;
+    }
+    .icon-header>.dropdown {
+        display: none;
+    }
+    .path {
+        margin-top: 77.8px;
+        padding: 8px;
+    }
+    .about{
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .heading-about{
+        font-size: 14px;
+        padding-top: 6px;
+        padding-bottom: 0;
+
+    }
+    hr{
+        size: 2px;
+        width: 20px;
+        height: 2px;
+        padding: ;
+    }
+    h4{
+        font-size: 12px;
+        padding: 0;
+        margin: 4px;
+    }
+    .heading-feedback{
+        font-size: 12px;
+        margin: 0px;
+    }
+    h6{
+        font-size: 10px;
+    }
+    .text-p{
+        font-size: 9px;
+        padding: 0;
+        margin: 2px;
+    }
+    .bg-about{
+        width: 100%;
+    }
+    .logo-shops{
+        width: 100px;
+        padding:10px;
+    }
+    .main-path, .main-sub{
+        font-size: 12px;
+    }
+}
+
+/* Tablet */
+@media (min-width:990px) {
+    .path {
+        margin-top: 88px;
+        padding: 8px;
+    }
+    .main-menu li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 10px;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+    .about{
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .heading-about{
+        font-size: 18px;
+        padding-top: 6px;
+        padding-bottom: 0;
+
+    }
+    hr{
+        size: 2px;
+        width: 50px;
+        height: 3px;
+        padding: 0;
+    }
+    h4{
+        font-size: 16px;
+        padding: 0;
+        margin: 4px;
+    }
+    .heading-feedback{
+        font-size: 16px;
+        margin: 0px;
+    }
+    h6{
+        font-size: 14px;
+    }
+    .text-p{
+        font-size: 12px;
+        padding: 0;
+        margin: 2px;
+    }
+    .bg-about{
+        width: 100%;
+    }
+    .logo-shops{
+        width: 120px;
+        padding-top: 0;
+    }
+    .main-path, .main-sub{
+        font-size: 16px;
+    }
+
+}
+
+/* Desktop */
+@media (min-width:1280px) {
+
+    .main-menu li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 16px;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+
+    .path {
+        margin-top: 88px;
+        padding: 10px;
+    }
+
+
+    .about{
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .heading-about{
+        font-size: 24px;
+        padding-top: 12px;
+        padding-bottom: 0;
+
+    }
+    hr{
+        size: 2px;
+        width: 50px;
+        height: 3px;
+        padding: 0;
+    }
+    h4{
+        font-size: 18px;
+        padding: 0;
+        margin: 4px;
+    }
+    .heading-feedback{
+        font-size: 18px;
+        margin: 0px;
+    }
+    h6{
+        font-size: 14px;
+    }
+    .text-p{
+        font-size: 14px;
+        padding: 4px;
+        margin: 2px;
+    }
+    .bg-about{
+        width: 100%;
+    }
+    .logo-shops{
+        width: 150px;
+        padding-top: 0;
+    }
+    .main-path, .main-sub{
+        font-size: 16px;
+    }
+    
+    
+}
+    
+
+/* Full HD */
+@media (min-width: 1400px) {
+     .main-menu li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 15px;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+
+     .path {
+        margin-top: 88px;
+        padding: 10px;
+    }
+    .paragraph{
+        font-size: 16px;
+    }
+    .about{
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main-sub, .main-path{
+        font-size: 18px;
+    }
+
+}
+
+.text-blue{
+    color: #267887;
 }

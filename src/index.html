@@ -9,98 +9,141 @@
 </head>
 
 <body>
-
-  <div class="bg-header fixed-top">
-    <div class="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <a class="navbar-brand pt-0 pb-0" href="index.html">
-            <img src="/img/logo1.png" alt="" />
-          </a>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-1 gap-md-2 gap-xxl-4" id="main-menu">
-              <li class="nav-item">
-                <a class="nav-link active text-white text-uppercase fw-bolder ani-border" aria-current="page"
-                  href="index.html">trang
-                  chủ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white text-uppercase fw-bolder ani-border" aria-current="page"
-                  href="about.html">giới
-                  thiệu</a>
-              </li>
-
-              <li class="nav-item ">
-                <a href="product.html" class="nav-link active ani-border text-light fw-bolder">
-                  SẢN PHẨM
-                  <i class="bi bi-caret-down-fill icon-size"></i>
-                </a>
-
-                <ul class="sub-menu">
-                  <li><a class="dropdown-item" href="list_product.html">Mũ lưỡi trai</a></li>
-                  <li><a class="dropdown-item" href="list1_product.html">Mũ snapback</a></li>
-                  <li><a class="dropdown-item" href="list2_product.html">Mũ bucket</a></li>
-                  <li><a class="dropdown-item" href="list3_product.html">Mũ nồi beret</a></li>
-                  <li><a class="dropdown-item" href="list4_product.html">Mũ len</a></li>
-                  <li><a class="dropdown-item" href="#">Mũ phớt</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active text-white text-uppercase fw-bolder ani-border" aria-current="page"
-                  href="blog.html">blogs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-white text-uppercase fw-bolder ani-border" aria-current="page"
-                  href="contact.html">liên hệ</a>
-              </li>
-            </ul>
-
-            <div class="d-lg-flex d-md-flex d-flex gap-2 gap-md-3 gap-lg-4 gap-xxl-5 align-items-center">
-
-              <div class="dropdown">
-                <a class="" type="" data-bs-toggle="dropdown">
-                  <i class="bi bi-person white fs-4"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="signup.html">Đăng Ký</a></li>
-                  <li><a class="dropdown-item" href="signin.html">Đăng Nhập</a></li>
-                  <li><a class="dropdown-item" href="#">Lịch Sử Mua Hàng</a></li>
-                </ul>
-              </div>
-
-              <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight">Toggle right offcanvas</button>
-
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
+  <div id="header">
+    <div class="bg-header container-fluid fixed-top">
+      <div class="container py-1 ">
+        <div class="row d-flex align-items-center ">
+          <div class="logo-shop col-2">
+            <a href="index.html" class="">
+              <img src="/img/logo1.png" alt="">
+            </a>
+          </div>
+          <ul class="main-menu col-8 d-flex justify-content-center gap-3 gap-xxl-5 gap-lg-2">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="about.html">GIỚI THIỆU
+      
+            </a></li>
+            <li>
+              <a href="product.html">SẢN PHẨM
+                <i class="bi bi-caret-down-fill icon-dropdown"></i>
+              </a>
+              <ul class="sub-menu">
+                <li><a href="">Mũ lưỡi trai</a></li>
+                <li><a href="">Mũ snapback</a></li>
+                <li><a href="">Mũ bucket</a></li>
+                <li><a href="">Mũ nồi beret</a></li>
+                <li><a href="">Mũ len</a></li>
+                <li><a href="">Mũ phớt</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
+          </ul>
+          <div class="icon-header col-2 d-flex gap-xl-1 justify-content-end align-items-center">
+            <div class="dropdown">
+              <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href=""><i class="bi bi-search white fs-4"></i></a>
+              </button>
+              <ul class="dropdown-menu p-0">
+                <form action="">
+                  <input type="search" name="" id="" placeholder="Tìm kiếm" class="p-2 rounded-2">
+                </form>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href=""><i class="bi bi-person white fs-4"></i></a>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="signup.html">ĐĂNG KÝ</a></li>
+                <li><a class="dropdown-item" href="signin.html">ĐĂNG NHẬP</a></li>
+                <li><a class="dropdown-item" href="#">LỊCH SỬ MUA HÀNG</a></li>
+              </ul>
+            </div>
+            <div>
+              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">
+                <i class="bi bi-cart3 white fs-4"></i>
+              </button>
+      
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">GIỎ HÀNG</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  
+      
                 </div>
               </div>
             </div>
-            <div>
-              <a href=""><i class="bi bi-search white fs-4"></i></a>
-            </div>
+
+            <nav class="navbar d-xl-none d-block d-lg-none">
+              <div class="container justify-content-end p-0">
+      
+                <a class="" type="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar">
+                  <i class="bi bi-list text-light fs-4"></i>
+              </a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <a href=""><img src="/img/logo1.png" alt=""></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">TRANG CHỦ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">GIỚI THIỆU</a>
+                      </li>
+      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          SẢN PHẨM
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Mũ lưỡi trai</a></li>
+                          <li><a class="dropdown-item" href="#">Mũ Snapback</a></li>
+                          <li><a class="dropdown-item" href="#">Mũ Bucket</a></li>
+                          <li><a class="dropdown-item" href="#">Mũ Nồi Beret</a></li>
+                          <li><a class="dropdown-item" href="#">Mũ Len</a></li>
+                          <li><a class="dropdown-item" href="#">Mũ Phớt</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">BLOG</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">LIÊN HỆ</a>
+                      </li>
+                      <div class="dropdown">
+      
+      
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      
+                          <a href=""><i class="bi bi-person white fs-4 text-dark"></i></a>
+                        </button>
+                        <ul class="dropdown-menu user">
+                          <li><a class="dropdown-item" href="signup.html">ĐĂNG KÝ</a></li>
+                          <li><a class="dropdown-item" href="signin.html">ĐĂNG NHẬP</a></li>
+                          <li><a class="dropdown-item" href="#">LỊCH SỬ MUA HÀNG</a></li>
+                        </ul>
+                      </div>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
           </div>
-
+        </div>
       </div>
-
-
-      </nav>
     </div>
-  </div>
+
   </div>
 
   <div class="banner relative">
@@ -118,8 +161,8 @@
     </div>
   </div>
 
-  <div class="bg-item">
-    <div class="container">
+ 
+    <div class="container service my-3">
       <div class="row">
 
         <div class="col-md-4 d-flex flex-column gap-lg-3 gap-md-2 align-items-center pt-3 text-center sub-service">
@@ -148,10 +191,10 @@
 
       </div>
     </div>
-  </div>
+  
 
   <div class="container">
-    <div class="row gx-0 d-flex d-md-flex align-items-center my-xl-5 mt-md-4">
+    <div class="row gx-0 d-flex d-md-flex align-items-center my-md-4">
       <div class="col-xxl-4 col-md-3">
         <hr size="6px" color="#328D9D">
       </div>
@@ -164,18 +207,16 @@
         <hr size="6px" color="#328D9D">
       </div>
     </div>
-  </div>
 
-  <div class="container">
     <div class="row">
-      <div class="col-xl-3 col-6 mb-3">
+      <div class="col-xl-3 col-6 col-lg-4 mb-3 mb-lg-0">
         <div class="cart-product bg-item d-flex flex-column">
-
+    
           <a href="item.html" class="thumnail-product">
             <img src="/img/anh1.svg" alt="">
           </a>
-
-          <div class="p-xxl-3 p-2">
+    
+          <div class="p-xxl-3 p-2 p-xl-3 ">
             <div class="description paragraph">
               Mũ lưỡi trai Ny M102 màu đen hot 2022
             </div>
@@ -188,18 +229,18 @@
             </div>
             <div class="price">250.000 VNĐ</div>
           </div>
-
+    
           <div><a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a></div>
-
+    
         </div>
       </div>
-      <div class="col-xl-3 col-6">
+      <div class="col-xl-3 col-6 col-lg-4">
         <div class="cart-product bg-item d-flex flex-column">
-
+    
           <div class="thumnail-product">
             <a href=""><img src="/img/anh2.svg" alt="" style="min-width: 100%;"></a>
           </div>
-
+    
           <div class="p-xl-3 p-2">
             <div class="description paragraph">
               Mũ lưỡi trai màu xanh dương Jean rách
@@ -214,17 +255,17 @@
             <div class="price">199.000 VNĐ</div>
           </div>
           <div><a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a></div>
-
+    
         </div>
       </div>
-
-      <div class="col-xl-3 col-6">
+    
+      <div class="col-xl-3 col-6 col-lg-4">
         <div class="cart-product bg-item d-flex flex-column ">
-
+    
           <div class="thumnail-product">
             <a href=""><img src="/img/anh3.svg" alt="" style="min-width: 100%;"></a>
           </div>
-
+    
           <div class="p-xl-3 p-2">
             <div class="description paragraph">
               Mũ lưỡi trai da nam nữ Classic cao cấp M172
@@ -239,17 +280,17 @@
             <div class="price">135.000 VNĐ</div>
           </div>
           <div><a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a></div>
-
+    
         </div>
       </div>
-
-      <div class="col-xl-3 col-6">
+    
+      <div class="col-xl-3 col-6 col-lg-4">
         <div class="cart-product bg-item d-flex flex-column">
-
+    
           <div class="thumnail-product">
             <a href=""><img src="/img/anh4.svg" alt="" style="min-width: 100%;"></a>
           </div>
-
+    
           <div class="p-xl-3 p-2">
             <div class="description paragraph">
               Mũ lưỡi trai Ny chữ ký khóa hợp kim vàng
@@ -264,21 +305,22 @@
             <div class="price">149.000 VNĐ</div>
           </div>
           <div><a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a></div>
-
+    
         </div>
       </div>
     </div>
-
-    <div class="read-all my-xxl-5 m-3">
+    
+    <div class="read-all mb-xxl-5 mt-xxl-3 my-3 ">
       <button class="btn-product text-white ">
-        <a href="list_product.html" class="text-decoration-none text-light">XEM TẤT CẢ</a>
+        <a href="list_product.html" class="text-decoration-none text-light fw-bold">XEM TẤT CẢ</a>
       </button>
     </div>
-
   </div>
 
+  
+
   <div class="container">
-    <div class="row gx-0 d-flex align-items-center my-xl-5 mt-md-4">
+    <div class="row gx-0 d-flex align-items-center my-xl- my-md-4">
       <div class="col-xxl-4 col-md-3">
         <hr size="6px" color="#328D9D">
       </div>
@@ -291,17 +333,15 @@
         <hr size="6px" color="#328D9D">
       </div>
     </div>
-  </div>
 
-  <div class="container">
     <div class="row">
-      <div class="col-xl-3 col-6 mb-3">
+      <div class="col-xl-3 col-6 mb-3 col-lg-4">
         <div class="cart-product bg-item d-flex flex-column">
-
+    
           <div class="thumnail-product">
             <a href=""><img src="/img/anh5.svg" alt="" style="min-width: 100%;"></a>
           </div>
-
+    
           <div class="p-xl-3 p-2">
             <div class="description paragraph">
               Mũ rộng vành nam nữ bucket hot
@@ -316,16 +356,16 @@
             <div class="price">129.000 VNĐ</div>
           </div>
           <div><a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a></div>
-
+    
         </div>
       </div>
-      <div class="col-xl-3 col-6">
+      <div class="col-xl-3 col-6 col-lg-4">
         <div class="cart-product bg-item d-flex flex-column ">
-
+    
           <div class="thumnail-product">
             <a href=""><img src="/img/anh6.svg" alt="" style="min-width: 100%;"></a>
           </div>
-
+    
           <div class="p-xl-3 p-2">
             <div class="description paragraph">
               Mũ Bucket Thổ Cẩm 2 mặt – BK36
@@ -340,17 +380,17 @@
             <div class="price">165.000 VNĐ</div>
           </div>
           <div><a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a></div>
-
+    
         </div>
       </div>
-
-      <div class="col-xl-3 col-6">
+    
+      <div class="col-xl-3 col-6 col-lg-4">
         <div class="cart-product bg-item d-flex flex-column ">
-
+    
           <div class="thumnail-product">
             <a href=""><img src="/img/anh7.svg" alt="" style="min-width: 100%;"></a>
           </div>
-
+    
           <div class="p-xl-3 p-2">
             <div class="description paragraph">
               Mũ ngư dân bucket cây dừa 2 mặt
@@ -365,17 +405,17 @@
             <div class="price">135.000 VNĐ</div>
           </div>
           <div><a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a></div>
-
+    
         </div>
       </div>
-
-      <div class="col-xl-3 col-6">
+    
+      <div class="col-xl-3 col-6 col-lg-4">
         <div class="cart-product bg-item d-flex flex-column ">
-
+    
           <div class="thumnail-product">
             <a href=""><img src="/img/anh8.svg" alt="" style="min-width: 100%;"></a>
           </div>
-
+    
           <div class="p-xl-3 p-2">
             <div class="description paragraph">
               Mũ vành nam nữ vải 100% Cotton
@@ -390,21 +430,22 @@
             <div class="price">145.000 VNĐ</div>
           </div>
           <div><a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a></div>
-
+    
         </div>
       </div>
     </div>
-
-    <div class="read-all my-xxl-5 m-3">
+    
+    <div class="read-all mt-xxl-2 mb-xxl-5 my-3 mt-xl-0 ">
       <button class="btn-product text-white ">
-        <a href="list2_product.html" class="text-decoration-none text-light">XEM TẤT CẢ</a>
+        <a href="list2_product.html" class="text-decoration-none text-light fw-bold">XEM TẤT CẢ</a>
       </button>
     </div>
-
   </div>
 
+  
+
   <div class="container">
-    <div class="row gx-0 d-flex align-items-center my-xxl-5 ">
+    <div class="row gx-0 d-flex align-items-center my-xxl- my-md-4 ">
       <div class="col-xxl-4 col-md-3">
         <hr size="6px" color="#328D9D">
       </div>
@@ -417,20 +458,18 @@
         <hr size="6px" color="#328D9D">
       </div>
     </div>
-  </div>
 
-  <div class="container">
     <div class="row">
-      <div class="col-xl-3 col-6 mb-3">
+      <div class="col-xl-3 col-6 mb-3 col-lg-4">
         <div class="cart-product bg-item d-flex flex-column gap-1">
-
+    
           <div class="thumnail-product">
             <a href=""><img src="/img/anh9.svg" alt="" style="min-width: 100%;"></a>
           </div>
-
+    
           <div class="p-xl-3 p-2">
             <div class="description paragraph">
-              Mũ Rapper Snapback Business SN25 cực chất
+              Mũ Rapper Snapback Business SN25
             </div>
             <div class="rate">
               <i class="bi bi-star-fill"></i>
@@ -442,17 +481,17 @@
             <div class="price">185.000 VNĐ</div>
           </div>
           <div><a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a></div>
-
+    
         </div>
       </div>
-
-      <div class="col-xl-3 col-6">
+    
+      <div class="col-xl-3 col-6 col-lg-4">
         <div class="cart-product bg-item d-flex flex-column gap-1">
-
+    
           <div class="thumnail-product">
             <a href=""><img src="/img/anh10.svg" alt="" style="min-width: 100%;"></a>
           </div>
-
+    
           <div class="p-xl-3 p-2">
             <div class="description paragraph">
               Mũ Snapback Coconut Tree SN43 tím than
@@ -467,20 +506,20 @@
             <div class="price">199.000 VNĐ</div>
           </div>
           <div><a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a></div>
-
+    
         </div>
       </div>
-
-      <div class="col-xl-3 col-6">
+    
+      <div class="col-xl-3 col-6 col-lg-4">
         <div class="cart-product bg-item d-flex flex-column gap-1">
-
+    
           <div class="thumnail-product">
             <a href=""><img src="/img/anh11.svg" alt="" style="min-width: 100%;"></a>
           </div>
-
+    
           <div class="p-xl-3 p-2">
             <div class="description paragraph">
-              Mũ Snapback trơn Classic màu đen cao cấp
+              Mũ Snapback trơn Classic màu đen
             </div>
             <div class="rate">
               <i class="bi bi-star-fill"></i>
@@ -492,17 +531,17 @@
             <div class="price">175.000 VNĐ</div>
           </div>
           <div><a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a></div>
-
+    
         </div>
       </div>
-
-      <div class="col-xl-3 col-6">
+    
+      <div class="col-xl-3 col-6 col-lg-4">
         <div class="cart-product bg-item d-flex flex-column gap-1">
-
+    
           <div class="thumnail-product">
             <a href=""><img src="/img/anh12.svg" alt="" style="min-width: 100%;"></a>
           </div>
-
+    
           <div class="p-xl-3 p-2">
             <div class="description paragraph">
               Nón Snapback Barber Brooklyn SN42 đen
@@ -517,33 +556,32 @@
             <div class="price">190.000 VNĐ</div>
           </div>
           <div><a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a></div>
-
+    
         </div>
       </div>
-
-
     </div>
-
-    <div class="read-all my-xl-5 my-3">
+    
+    <div class="read-all mb-xxl-5 my-3 my-xl-0 mt-xxl-3 ">
       <button class="btn-product text-white ">
-        <a href="list1_product.html" class="text-decoration-none text-light">XEM TẤT CẢ</a>
+        <a href="list1_product.html" class="text-decoration-none text-light fw-bold">XEM TẤT CẢ</a>
       </button>
     </div>
-
   </div>
 
+  
+
   <div class="row gx-0 d-flex align-items-center my-xxl-5 my-4 my-md-4">
-    <div class="col-xxl-3 col-md-3 col-12">
+    <div class="col-xxl-3 col-md-3 col-12 col-lg-2">
       <hr size="6px" color="#328D9D">
     </div>
 
-    <div class="col-xxl-6 col-md-6 col-12 d-flex align-items-center title-about justify-content-center gap-2">
+    <div class="col-xxl-6 col-md-6 col-12 col-lg-8 d-flex align-items-center title-about justify-content-center gap-2">
       <i class="bi bi-star-fill"></i>
       <div class="text-title">QCCap - THƯƠNG HIỆU NÓN MŨ THỜI TRANG VIỆT</div>
       <i class="bi bi-star-fill"></i>
     </div>
 
-    <div class="col-xxl-3 col-md-3 col-12">
+    <div class="col-xxl-3 col-md-3 col-12 col-lg-2">
       <hr size="6px" color="#328D9D">
     </div>
   </div>
@@ -572,7 +610,7 @@
     <div class="container">
       <div class="row align-items-center news">
 
-        <div class="col-xxl-5 col-xl-5  col-12">
+        <div class="col-xxl-5 col-xl-5  col-12 col-md-12 d-flex justify-content-center">
           <div class="thumnail-news text-xxl-start text-center">
             <img src="img/img1-new.svg" alt="" class="">
           </div>
@@ -581,7 +619,7 @@
         <div class="col-xxl-7 col-xl-7  col-12">
           <div class="d-flex align-items-center gap-2 fs-5">
             <hr width="100px" size="7px" color="#328D9D">
-            <div class="paragraph">ĐĂNG KÝ</div>
+            <div class="paragraph subscribe">ĐĂNG KÝ</div>
           </div>
           <div class="heading-news text-center text-xxl-start">
             NHẬN BẢN TIN CỦA CHÚNG TÔI
@@ -924,7 +962,7 @@
 
   <div id="backtop">
     <i class="bi bi-caret-up-fill"></i>
-  </div>
+  </div> -->
 
 
 

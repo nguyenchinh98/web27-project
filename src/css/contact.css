@@ -1,20 +1,22 @@
-.path{
-    margin-top: 96px;
-}
-.main-path{
+.main-path {
     text-decoration: none;
     color: #328D9D;
+    font-size: 18px;
 }
-.main-sub{
+
+.main-sub {
     text-decoration: none;
     color: #555555;
+    font-size: 18px;
 }
-.heading-contact{
+
+.heading-contact {
     font-size: 32px;
     text-align: center;
     font-weight: 700;
 }
-.btn-send{
+
+.btn-send {
     width: 100px;
     background-color: #555555;
     color: white;
@@ -22,17 +24,116 @@
     text-align: center;
     border-radius: 5px;
 }
-.btn-send:hover{
+
+.btn-send:hover {
     background-color: #328D9D;
     cursor: pointer;
-    
+
 }
-@media (max-width:767px) {
-    .path{
-        margin-top: 115.29px;
+
+/* Mobile */
+@media screen and (min-width:390px) {
+
+    .main-menu li a {
+        display: none;
     }
-    
+
+    .icon-header>.dropdown {
+        display: none;
+    }
+
+    .path {
+        margin-top: 57.1px;
+        padding: 8px 0;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
 }
-@media (min-width:768px) and (max-width:1023px){
+
+/* Tablet-Mini - md */
+
+@media (min-width: 768px) {
+    .main-menu li a {
+        display: none;
+    }
+
+    .icon-header>.dropdown {
+        display: none;
+    }
+
+    .path {
+        margin-top: 77.81px;
+        padding: 8px;
+    }
+}
+
+/* Tablet - lg*/
+@media (min-width: 990px) {
+    .path {
+        margin-top: 88px;
+        padding: 8px;
+    }
+
+    .main-menu li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 8px;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+}
+
+/* Desktop - xl */
+@media (min-width:1280px) {
+
+    .main-menu li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 16px;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+
+    .path {
+        margin-top: 88px;
+        padding: 8px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
+}
+
+/* Full HD- xxl */
+@media (min-width: 1400px) {
+    .main-menu li a {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+
+    .path {
+        margin-top: 88px;
+        padding: 10px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
 
 }
