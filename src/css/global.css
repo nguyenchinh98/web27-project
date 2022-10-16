@@ -190,7 +190,7 @@ img{
     }
     to{
         opacity: 1;
-        margin-left: -5px;
+        margin-left: -10px;
 
     }
 }
@@ -254,7 +254,9 @@ img{
 .text-feedback{
     padding: 24px 0;
 }
-
+.title-footer{
+    color: #328D9D;
+}
 
 #backtop{
     font-size: 20px;
@@ -270,4 +272,4 @@ img{
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-}
+};

@@ -93,6 +93,14 @@
     padding: 10px;
     border-radius: 8px;
 }
+.title-footer{
+        padding-top: 24px;
+        font-size: 14px;
+    }
+    .about-footer{
+        padding-top: 30px;
+    }
+
 }
 
 /* Tablet-Mini - md */
@@ -117,6 +125,13 @@
     .btn-blog {
         padding: 12px 16px;
      }
+
+     .title-footer{
+        font-size: 16px;
+    }
+    .about-footer{
+        padding-top: 50px;
+    }
 }
 
 

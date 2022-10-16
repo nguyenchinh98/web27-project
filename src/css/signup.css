@@ -40,17 +40,16 @@
     font-weight: 700;
 }
 
-.continue-signup {
+/* .continue-signup {
     background-color: #328D9D;
     padding: 10px 24px;
     border-radius: 8px;
     color: white;
-}
+} */
 
-.continue-signup:hover {
+.btn-signup:hover {
     background-color: #11444d;
     color: white;
-    cursor: pointer;
 
 }
 
@@ -138,6 +137,13 @@
     .signup-right {
         border-left: none;
     }
+    .title-footer{
+        padding-top: 24px;
+        font-size: 14px;
+    }
+    .about-footer{
+        padding-top: 30px;
+    }
 
 }
 
@@ -168,7 +174,12 @@
 
     h6 {
         font-size: 14px;
-
+    }
+    .title-footer{
+        font-size: 16px;
+    }
+    .about-footer{
+        padding-top: 50px;
     }
 }
 
@@ -223,4 +234,13 @@
     }
 
 
+}
+
+
+.btn-signup{
+    padding: 6px 24px;
+    background-color: #328D9D;
+    border:none;
+    color: white;
+    border-radius: 6px;
 }

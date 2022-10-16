@@ -76,6 +76,15 @@
     .main-path, .main-sub{
         font-size: 12px;
     }
+    .title-footer{
+        padding-top: 24px;
+        font-size: 14px;
+    }
+    .about-footer{
+        padding-top: 30px;
+    }
+
+    
     
 }
 
@@ -107,7 +116,6 @@
         size: 2px;
         width: 20px;
         height: 2px;
-        padding: ;
     }
     h4{
         font-size: 12px;
@@ -135,6 +143,12 @@
     }
     .main-path, .main-sub{
         font-size: 12px;
+    }
+    .title-footer{
+        font-size: 16px;
+    }
+    .about-footer{
+        padding-top: 50px;
     }
 }
 

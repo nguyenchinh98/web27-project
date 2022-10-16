@@ -1,35 +1,40 @@
-
-.main-path{
+.main-path {
     text-decoration: none;
     color: #328D9D;
 }
-.main-sub{
+
+.main-sub {
     text-decoration: none;
     color: #555555;
 }
-.product-portfolio{
-    background-color:#328D9D;
+
+.product-portfolio {
+    background-color: #328D9D;
     font-size: 18px;
     font-weight: 600;
     padding: 8px;
     color: white;
 }
-.list-title{
+
+.list-title {
     padding: 8px;
     text-decoration: none;
     color: #555555;
 }
-.list-title:hover{
+
+.list-title:hover {
     background-color: #849da2;
     color: white;
 }
-.title-signin{
+
+.title-signin {
     background-color: #849da2;
     color: white;
     text-decoration: none;
     padding: 8px;
 }
-.continue-signin{
+
+.continue-signin {
     background-color: #196a78;
     padding: 10px 24px;
     border-radius: 8px;
@@ -38,19 +43,24 @@
     text-align: center;
     margin: 32px 0px;
 }
-.continue-signin:hover{
+
+.continue-signin:hover {
     background-color: #328D9D;
     cursor: pointer;
 }
-.heading-signin{
+
+.heading-signin {
     font-weight: 700;
 }
-.customer-new{
+
+.customer-new {
     border-left: 1px solid rgba(128, 128, 128, 0.3);
 }
-.p-signin{
-     padding: 24px 30px;
+
+.p-signin {
+    padding: 24px 30px;
 }
+
 /* Mobile */
 @media screen and (min-width:390px) {
 
@@ -81,18 +91,29 @@
         font-size: 14px;
 
     }
-    .continue-signin{
-    background-color: #196a78;
-    padding: 8px;
-    border-radius: 8px;
-    color: white;
-    width: 150px;
-    text-align: center;
-    margin: 16px 0;
-}
-.p-signin{
-     padding: 16px;
-}
+
+    .continue-signin {
+        background-color: #196a78;
+        padding: 8px;
+        border-radius: 8px;
+        color: white;
+        width: 150px;
+        text-align: center;
+        margin: 16px 0;
+    }
+
+    .p-signin {
+        padding: 16px;
+    }
+
+    .title-footer {
+        padding-top: 24px;
+        font-size: 14px;
+    }
+
+    .about-footer {
+        padding-top: 30px;
+    }
 
 
 }
@@ -126,22 +147,34 @@
         font-size: 14px;
 
     }
-       .continue-signin{
-    background-color: #196a78;
-    padding: 10px;
-    border-radius: 8px;
-    color: white;
-    width: 150px;
-    
-    margin: 16px 0;
-}
-.p-signin{
-     padding: 16px;
-}
-.heading-signin{
-    font-weight: 700;
-    
-}
+
+    .continue-signin {
+        background-color: #196a78;
+        padding: 10px;
+        border-radius: 8px;
+        color: white;
+        width: 150px;
+
+        margin: 16px 0;
+    }
+
+    .p-signin {
+        padding: 16px;
+    }
+
+    .heading-signin {
+        font-weight: 700;
+
+    }
+
+    .title-footer {
+        font-size: 16px;
+    }
+
+    .about-footer {
+        padding-top: 50px;
+    }
+
 }
 
 /* Tablet */

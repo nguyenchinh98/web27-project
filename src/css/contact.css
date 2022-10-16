@@ -50,6 +50,13 @@
     .paragraph {
         font-size: 16px;
     }
+    .title-footer{
+        padding-top: 24px;
+        font-size: 14px;
+    }
+    .about-footer{
+        padding-top: 30px;
+    }
 
 }
 
@@ -67,6 +74,12 @@
     .path {
         margin-top: 77.81px;
         padding: 8px;
+    }
+    .title-footer{
+        font-size: 16px;
+    }
+    .about-footer{
+        padding-top: 50px;
     }
 }
 

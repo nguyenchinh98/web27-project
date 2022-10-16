@@ -381,6 +381,7 @@
         font-size: 12px;
     }
     .title-footer{
+        padding-top: 24px;
         font-size: 14px;
     }
 }
@@ -429,8 +430,13 @@
         font-size: 8px;
     }
     .title-footer{
-        font-size: 14px;
+        font-size: 16px;
+        padding-top: 24px;
     }
+    .about-footer{
+        padding-top: 30px;
+    }
+
 }
 /* Tablet-Mini */
 
@@ -520,6 +526,12 @@
         padding: 8px;
     }
     .subscribe{
+        font-size: 16px;
+    }
+    .about-footer{
+        padding-top: 50px;
+    }
+    .title-footer{
         font-size: 16px;
     }
 }
