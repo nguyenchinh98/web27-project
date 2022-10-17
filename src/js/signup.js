@@ -6,19 +6,27 @@ import "../css/signup.css";
 
 
 
-function signup(e){
-    event.preventDefault();
-    let username = document.getElementById("username").value;
-    let email = document.getElementById("email").value;
-    let phone = document.getElementById("phone").value;
-    let password = document.getElementById("password").value;
-    let user = {
-        username: username,
-        email: email,
-        phone: phone,
-        password: password,
-    }
-    let json = JSON.stringify(user);
-    localStorage.setItem(username, json)
-    alert("Đăng ký thành công")
-}
+
+    
+    let email = document.getElementById("email");
+    
+    let password = document.getElementById("password");
+    let btnSignup = document.querySelector(".btn-signup");  
+
+    btnSignup.addEventListener("click", (e) => {
+        e.preventDefault();
+         let user = {
+           email: email.value,
+           password: password.value,
+         };
+
+        let json = JSON.stringify(user);
+        if (!email.value || !email.value){
+            aler("Vui lòng nhập đầy đủ thông tin")
+        } else{
+            localStorage.setItem(email.value, json);
+            alert("Đăng ký thành công")
+            window.location.href = "signin.html";
+        }
+    })
+

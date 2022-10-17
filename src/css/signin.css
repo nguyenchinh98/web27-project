@@ -42,6 +42,7 @@
     width: 200px;
     text-align: center;
     margin: 32px 0px;
+    border: none;
 }
 
 .continue-signin:hover {
@@ -74,7 +75,7 @@
 
     .path {
         margin-top: 56.36px;
-        padding: px;
+        padding: 8px;
     }
 
 
@@ -131,7 +132,7 @@
 
     .path {
         margin-top: 77.82px;
-        padding: px;
+        padding: 10px;
     }
 
     .main-path,
@@ -181,7 +182,7 @@
 @media (min-width:990px) {
     .path {
         margin-top: 88px;
-        padding: px;
+        padding: 8px;
     }
 
     .main-menu li a {
@@ -218,7 +219,7 @@
 
     .path {
         margin-top: 88px;
-        padding: px;
+        padding: 10px;
     }
 
 
