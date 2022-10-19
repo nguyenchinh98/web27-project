@@ -8,9 +8,7 @@
     text-decoration: none;
     color: #555555;
 }
-.path{
-    margin-top: 96px;
-}
+
 .path-cart{
     color: #555555;
     font-weight: 500;
@@ -34,6 +32,7 @@
 .stt{
     text-align: center;
     width: 38px;
+    height: 38px;
     border-radius: 100%;
     font-size: 24px;
     background-color: #328D9D;
@@ -96,15 +95,163 @@
     padding-bottom: 8px;
 }
 
-@media (max-width:767px) {
-    .path {
-        margin-top: 115.29px;
+
+#toolbar{
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+}
+
+#toolbar ul li{
+    list-style: none;
+    margin: 8px 0;
+}
+#toolbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+#toolbar ul li a span{
+    background-color: #01a2fc;
+    padding: 6px 8px;
+    border-radius: 8px;
+    opacity: 0;
+}
+#toolbar ul li a:hover span{
+    opacity: 1;
+}
+.swing{
+    animation: swing ease-in-out 0.2s infinite alternate;
+    transform-origin: center;
+}
+.zalo{
+    animation: zalo ease-in-out 2s infinite alternate;
+    transform-origin:center;
+}
+.message{
+    animation: swing ease-in-out 0.2s infinite alternate;
+    transform-origin: center;
+}
+/* .swing:after{
+    content: '';
+    z-index: 0;
+    transform: rotate(30deg);
+} */
+
+@keyframes swing {
+    0% { transform: rotate(30deg); }
+}
+@keyframes zalo {
+    0% { transform: rotate(360deg); }
+}
+
+
+/* Mobile */
+@media screen and (min-width:390px) {
+
+    .main-menu li a {
+        display: none;
     }
 
-    .path-cart,
-    .path-pay,
-    .done {
-        font-size: 18px;
+    .icon-header>.dropdown {
+        display: none;
+    }
+
+    .path {
+        margin-top: 56.36px;
+        padding: 4px;
     }
     
+    
+    .main-path, .main-sub{
+        font-size: 14px;
+    }
+    .title-footer{
+        font-size: 14px;
+        padding-top: 24px;
+    }
+    .text-footer-bottom{
+        font-size: 12px;
+    }
+    .atm{
+        font-size: 12px;
+    }
+    .title-footer{
+        padding-top: 24px;
+        font-size: 14px;
+    }
+    .about-footer{
+        padding-top: 30px;
+    }
+    
+}
+/* Tablet-Mini - md */
+
+@media (min-width: 768px){
+     .main-menu li a {
+        display: none;
+    }
+    .icon-header>.dropdown {
+        display: none;
+    }
+    .path {
+        margin-top: 77.8px;
+        padding: 8px;
+    }
+    
+    .main-path, .main-sub{
+        font-size: 14px;
+    }
+    .title-footer{
+        font-size: 16px;
+    }
+    .about-footer{
+        padding-top: 50px;
+    }
+    
+}
+
+/* Tablet */
+@media (min-width:990px) {
+    .path {
+        margin-top: 88px;
+        padding: 8px;
+    }
+    .main-menu li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 10px;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+    
+    .main-path, .main-sub{
+        font-size: 16px;
+    }
+
+}
+
+/* Desktop */
+@media (min-width:1280px) {
+
+    .main-menu li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 16px;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+
+    .path {
+        margin-top: 88px;
+        padding: 10px;
+    }
+    .main-path, .main-sub{
+        font-size: 16px;
+    }
 }

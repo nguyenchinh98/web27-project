@@ -2,328 +2,420 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanh toán</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh toán</title>
 </head>
 
 <body>
-    <div class="bg-header fixed-top">
-      <div class="header">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand pt-0 pb-0" href="index.html">
-              <img src="/img/logo1.png" alt="" />
+  <div id="header">
+    <div class="bg-header container-fluid fixed-top">
+      <div class="container py-1 ">
+        <div class="row d-flex align-items-center ">
+          <div class="logo-shop col-2">
+            <a href="index.html" class="">
+              <img src="/img/logo1.png" alt="">
             </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-1 gap-md-2 gap-xxl-4 align-items-center" id="main-menu">
-                <li class="nav-item">
-                  <a class="nav-link active text-white text-uppercase fw-bolder ani-border" aria-current="page"
-                    href="index.html">trang
-                    chủ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-white text-uppercase fw-bolder ani-border" aria-current="page"
-                    href="about.html">giới
-                    thiệu</a>
-                </li>
-    
-                <li class="nav-item ">
-                  <a href="product.html" class="nav-link active ani-border text-light fw-bolder">
-                    SẢN PHẨM
-                    <i class="bi bi-caret-down-fill icon-size"></i>
-                  </a>
-    
-                  <ul class="sub-menu">
-                    <li><a class="dropdown-item" href="list_product.html">Mũ lưỡi trai</a></li>
-                    <li><a class="dropdown-item" href="list1_product.html">Mũ snapback</a></li>
-                    <li><a class="dropdown-item" href="#">Mũ bucket</a></li>
-                    <li><a class="dropdown-item" href="#">Mũ nồi beret</a></li>
-                    <li><a class="dropdown-item" href="#">Mũ len</a></li>
-                    <li><a class="dropdown-item" href="#">Mũ phớt</a></li>
-                  </ul>
-                </li>
-    
-                <li class="nav-item">
-                  <a class="nav-link active text-white text-uppercase fw-bolder ani-border" aria-current="page"
-                    href="blog.html">blogs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active text-white text-uppercase fw-bolder ani-border" aria-current="page"
-                    href="contact.html">liên hệ</a>
-                </li>
+          </div>
+          <ul class="main-menu col-8 d-flex justify-content-center gap-lg-2">
+            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="about.html">GIỚI THIỆU
+  
+              </a></li>
+            <li>
+              <a href="product.html">SẢN PHẨM
+                <i class="bi bi-caret-down-fill icon-dropdown"></i>
+              </a>
+              <ul class="sub-menu">
+                <li><a href="list_product.html">Mũ lưỡi trai</a></li>
+                <li><a href="list1_product.html">Mũ snapback</a></li>
+                <li><a href="list2_product.html">Mũ bucket</a></li>
+                <li><a href="list3_product.html">Mũ nồi beret</a></li>
+                <li><a href="list4_product.html">Mũ len</a></li>
+                <li><a href="">Mũ phớt</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
+          </ul>
+          <div class="icon-header col-2 d-flex gap-xl-1 justify-content-end align-items-center">
+            <div class="dropdown">
+              <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href=""><i class="bi bi-search white fs-4"></i></a>
+              </button>
+              <ul class="dropdown-menu p-0">
+                <form action="">
+                  <input type="search" name="" id="" placeholder="Tìm kiếm" class="p-2 rounded-2">
+                </form>
               </ul>
             </div>
-    
-            <div class="d-lg-flex d-md-flex gap-2 gap-md-3 gap-lg-4 gap-xxl-5">
-              <div>
+            <div class="dropdown">
+              <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <a href=""><i class="bi bi-person white fs-4"></i></a>
-              </div>
-              <div>
-                <a href=""><i class="bi bi-cart3 white fs-4"></i></a>
-              </div>
-              <div>
-                <a href=""><i class="bi bi-search white fs-4"></i></a>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="signup.html">ĐĂNG KÝ</a></li>
+                <li><a class="dropdown-item" href="signin.html">ĐĂNG NHẬP</a></li>
+                <li><a class="dropdown-item" href="#">LỊCH SỬ MUA HÀNG</a></li>
+              </ul>
+            </div>
+            <div>
+              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">
+                <i class="bi bi-cart3 white fs-4"></i>
+              </button>
+  
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">GIỎ HÀNG</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+  
+                </div>
               </div>
             </div>
-          </nav>
+  
+            <nav class="navbar d-xl-none d-block d-lg-none">
+              <div class="container justify-content-end p-0">
+  
+                <a class="" type="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar">
+                  <i class="bi bi-list text-light fs-4"></i>
+                </a>
+                <div class="offcanvas offcanvas-end bg-nav" tabindex="-1" id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header ">
+                    <a href="" class="ps-3"><img src="/img/logo1.png" alt=""></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item d-flex align-items-center gap-2 ps-3">
+                        <i class="bi bi-house-door"></i>
+                        <a class="nav-link active fw-bold" aria-current="page" href="index.html">TRANG CHỦ</a>
+                      </li>
+                      <li class="nav-item d-flex align-items-center gap-2 ps-3">
+                        <i class="bi bi-file-person"></i>
+                        <a class="nav-link active fw-bold" aria-current="page" href="about.html">GIỚI THIỆU</a>
+                      </li>
+  
+                      <li class="nav-item dropdown d-flex align-items-center gap-2 ps-3">
+                        <i class="bi bi-gift"></i>
+                        <a class="nav-link active dropdown-toggle fw-bold" href="product.html" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          SẢN PHẨM
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="list_product.html">Mũ lưỡi trai</a></li>
+                          <li><a class="dropdown-item" href="list1_product.html">Mũ Snapback</a></li>
+                          <li><a class="dropdown-item" href="list2_product.html">Mũ Bucket</a></li>
+                          <li><a class="dropdown-item" href="list3_product.html">Mũ Nồi Beret</a></li>
+                          <li><a class="dropdown-item" href="list4_product.html">Mũ Len</a></li>
+                          <li><a class="dropdown-item" href="#">Mũ Phớt</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item d-flex align-items-center gap-2 ps-3">
+                        <i class="bi bi-book-half"></i>
+                        <a class="nav-link active fw-bold" aria-current="page" href="blog.html">BLOG</a>
+                      </li>
+                      <li class="nav-item d-flex align-items-center gap-2 ps-3">
+                        <i class="bi bi-whatsapp"></i>
+                        <a class="nav-link active fw-bold" aria-current="page" href="contact.html">LIÊN HỆ</a>
+                      </li>
+                      <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a href="" class="d-flex align-items-center gap-1 text-decoration-none text-dark fw-bold">
+                            <i class="bi bi-person white fs-4 text-dark"></i>
+                            <div>TÀI KHOẢN</div>
+                          </a>
+                        </button>
+                        <ul class="dropdown-menu user">
+                          <li><a class="dropdown-item" href="signup.html">ĐĂNG KÝ</a></li>
+                          <li><a class="dropdown-item" href="signin.html">ĐĂNG NHẬP</a></li>
+                          <li><a class="dropdown-item" href="#">LỊCH SỬ MUA HÀNG</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a href="" class="d-flex align-items-center gap-1 text-decoration-none text-dark fw-bold">
+                            <i class="bi bi-search white fs-4 text-dark"></i>
+                            <div>TÌM KIẾM</div>
+                          </a>
+                        </button>
+                        <ul class="dropdown-menu p-0">
+                          <form action="">
+                            <input type="search" name="" id="" placeholder="Tìm kiếm" class="p-2 rounded-2">
+                          </form>
+                        </ul>
+                      </div>
+                    </ul>
+  
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+  <div class=" path bg-item">
+    <div class="text-center paragraph">
+      <a href="index.html" class="main-sub">Trang chủ</a> / <a href="cart.html" class="main-path">Giỏ hàng</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text-center py-xl-3 paragraph font-24 py-3">
+      <a href="cart.html" class="path-cart">GIỎ HÀNG</a> / <a href="#" class="path-pay">CHI TIẾT THANH TOÁN</a> /
+      <span href="" class="done">HOÀN TẤT</span>
+    </div>
+    <div>
+      <div class="d-flex mb-2">
+        <div>Bạn đã có tài khoản?</div>
+        <a href="signin.html" class="text-decoration-none text-danger">Ấn vào đây để đăng nhập</a>
+      </div>
+
+      <h4 class="pay-cart mb-3">Thanh toán giỏ hàng</h4>
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="stt">1</div>
+            <div class="fs-5">Thông tin hóa đơn</div>
+          </div>
+
+          <div>
+            <div class="d-flex gap-1">
+              <div>Họ và tên</div>
+              <div class="text-danger">*</div>
+            </div>
+            <input type="text" name="" id="" class="w-100">
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-xl-6 col-6">
+              <div class="d-flex gap-1">
+                <div>Email</div>
+                <div class="text-danger">*</div>
+              </div>
+              <input type="text" name="" id="" class="w-100">
+            </div>
+            <div class="col-xl-6 col-6">
+              <div class="d-flex gap-1">
+                <div>Điện thoại</div>
+                <div class="text-danger">*</div>
+              </div>
+              <input type="text" name="" id="" class="w-100">
+
+            </div>
+          </div>
+
+          <div class="mt-2">
+            <div class="d-flex gap-1">
+              <div>Địa chỉ</div>
+              <div class="text-danger">*</div>
+            </div>
+            <input type="text" name="" id="" class="w-100">
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-6 col-xl-6">
+              <div class="d-flex gap-1">
+                <div>Tỉnh/ Thành Phố</div>
+                <div class="text-danger">*</div>
+              </div>
+              <input type="text" name="" id="" class="w-100">
+            </div>
+            <div class="col-6 col-xl-6">
+              <div class="d-flex gap-1">
+                <div>Quận/ Huyện</div>
+                <div class="text-danger">*</div>
+              </div>
+              <input type="text" name="" id="" class="w-100">
+
+            </div>
+          </div>
+          <div class="mt-2">
+            <div class="d-flex gap-1">
+              <div>Phường/ Xã</div>
+              <div class="text-danger">*</div>
+            </div>
+            <input type="text" name="" id="" class="w-100">
+          </div>
+          <textarea name="" id="" cols="30" rows="5" placeholder="Ghi chú đơn hàng" class="w-100 mt-3 p-2"></textarea>
+        </div>
+        <div class="col-xl-3">
+          <div class="d-flex gap-2 mb-3">
+            <div class="stt">2</div>
+            <div class="fs-5">Phương thức thanh toán</div>
+          </div>
+          <div class="ps-5 ps-xl-1">
+            <div>
+              <input type="radio" name="" id="cod">
+              <label for="cod">Thanh toán tiền khi nhận hàng (COD)</label>
+            </div>
+            <div class="py-3">
+              <input type="radio" name="" id="">
+              <label for="">Thanh toán bằng ví Momo</label>
+            </div>
+            <div>
+              <input type="radio" name="" id="">
+              <label for="">Thanh toán bằng ATM/VISA</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="stt">3</div>
+            <div class="fs-5">Thông tin giỏ hàng</div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div>
+                Tên sản phẩm
+              </div>
+            </div>
+            <div class="col-3 text-center">
+              <div>Số lượng</div>
+            </div>
+            <div class="col-3 text-center">
+              <div>Giá</div>
+            </div>
+          </div>
+
+          <div class="row pay-product">
+            <div class="col-6">Mũ lưỡi trai Ny M102 màu đen hot 2022</div>
+            <div class="col-3 text-center">1</div>
+            <div class="col-3 text-end">250.000 VNĐ</div>
+          </div>
+          <div class="d-flex temporary justify-content-between">
+            <div class="">Tạm tính</div>
+            <div class="">250.000 VNĐ</div>
+          </div>
+
+          <div class="d-flex py-2 service-charge justify-content-between">
+            <div class="">Phí vận chuyển</div>
+            <div class="">0 VNĐ</div>
+          </div>
+          <div class="d-flex total-money justify-content-between">
+            <div class=" ">Tổng cộng</div>
+            <div class="">250.000 VNĐ</div>
+          </div>
+          <div class="mt-3">Nhập mã ưu đãi</div>
+          <div class="row">
+            <div class="col-6">
+              <input type="text" name="" id="" placeholder="Nhập vào nếu có" class="w-100 h-100 p-2 rounded-2">
+            </div>
+            <div class="col-6 apply rounded-2">
+              <div>ÁP DỤNG</div>
+            </div>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-3 pt-5">
+            <div class="make-pay"><a href="" class="text-decoration-none text-light">TIẾN HÀNH THANH TOÁN</a></div>
+            <div class="continue-order "><a href="" class="text-decoration-none text-light">TIẾP TỤC MUA HÀNG</a></div>
+
+          </div>
         </div>
       </div>
     </div>
 
-    <div class=" path bg-item">
-        <div class="text-center py-xxl-3 py-2 paragraph">
-            <a href="index.html" class="main-sub">Trang chủ</a> / <a href="cart.html" class="main-path">Giỏ hàng</a>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="text-center py-xxl-3 paragraph font-24 py-3">
-            <a href="cart.html" class="path-cart">GIỎ HÀNG</a> / <a href="#" class="path-pay">CHI TIẾT THANH TOÁN</a> /
-            <span href="" class="done">HOÀN TẤT</span>
-        </div>
-        <div>
-            <div class="d-flex mb-2">
-                <div>Bạn đã có tài khoản?</div>
-                <a href="signin.html" class="text-decoration-none text-danger">Ấn vào đây để đăng nhập</a>
-            </div>
-            
-            <h4 class="pay-cart mb-3">Thanh toán giỏ hàng</h4>
-            <div class="row">
-                <div class="col-xxl-4">
-                    <div class="d-flex align-items-center gap-2 mb-3">
-                        <div class="stt">1</div>
-                        <div class="fs-5">Thông tin hóa đơn</div>
-                    </div>
-
-                    <div>
-                        <div class="d-flex gap-1">
-                            <div>Họ và tên</div>
-                            <div class="text-danger">*</div>
-                        </div>
-                        <input type="text" name="" id="" class="w-100">
-                    </div>
-
-                    <div class="row mt-2">
-                        <div class="col-xxl-6 col-6">
-                            <div class="d-flex gap-1">
-                                <div>Email</div>
-                                <div class="text-danger">*</div>
-                            </div>
-                            <input type="text" name="" id="" class="w-100">
-                        </div>
-                        <div class="col-xxl-6 col-6">
-                            <div class="d-flex gap-1">
-                                <div>Điện thoại</div>
-                                <div class="text-danger">*</div>
-                            </div>
-                            <input type="text" name="" id="" class="w-100">
-
-                        </div>
-                    </div>
-
-                    <div class="mt-2">
-                        <div class="d-flex gap-1">
-                            <div>Địa chỉ</div>
-                            <div class="text-danger">*</div>
-                        </div>
-                        <input type="text" name="" id="" class="w-100">
-                    </div>
-
-                    <div class="row mt-2">
-                        <div class="col-6 col-xxl-6">
-                            <div class="d-flex gap-1">
-                                <div>Tỉnh/ Thành Phố</div>
-                                <div class="text-danger">*</div>
-                            </div>
-                            <input type="text" name="" id="" class="w-100">
-                        </div>
-                        <div class="col-6 col-xxl-6">
-                            <div class="d-flex gap-1">
-                                <div>Quận/ Huyện</div>
-                                <div class="text-danger">*</div>
-                            </div>
-                            <input type="text" name="" id="" class="w-100">
-
-                        </div>
-                    </div>
-                    <div class="mt-2">
-                        <div class="d-flex gap-1">
-                            <div>Phường/ Xã</div>
-                            <div class="text-danger">*</div>
-                        </div>
-                        <input type="text" name="" id="" class="w-100">
-                    </div>
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Ghi chú đơn hàng" class="w-100 mt-3 p-2"></textarea>
-                </div>
-                <div class="col-xxl-3">
-                    <div class="d-flex align-items-center gap-2 mb-3">
-                        <div class="stt">2</div>
-                        <div class="fs-5">Phương thức thanh toán</div>
-                    </div>
-                    <div class="ps-5 ps-xxl-1">
-                        <div>
-                            <input type="radio" name="" id="cod">
-                            <label for="cod">Thanh toán tiền khi nhận hàng (COD)</label>
-                        </div>
-                        <div class="py-3">
-                            <input type="radio" name="" id="">
-                            <label for="">Thanh toán bằng ví Momo</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="" id="">
-                            <label for="">Thanh toán bằng ATM/VISA</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-5">
-                    <div class="d-flex align-items-center gap-2 my-3">
-                        <div class="stt">3</div>
-                        <div class="fs-5">Thông tin giỏ hàng</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div>
-                                Tên sản phẩm
-                            </div>
-                        </div>
-                        <div class="col-3 text-center">
-                             <div>Số lượng</div>
-                        </div>
-                        <div class="col-3 text-center">
-                            <div>Giá</div>
-                        </div>
-                    </div>
-
-                    <div class="row pay-product">
-                        <div class="col-6">Mũ lưỡi trai Ny M102 màu đen hot 2022</div>
-                        <div class="col-3 text-center">1</div>
-                        <div class="col-3 text-end">250.000 VNĐ</div>
-                    </div>
-                    <div class="d-flex temporary justify-content-between">
-                        <div class="">Tạm tính</div>
-                        <div class="">250.000 VNĐ</div>
-                    </div>
-
-                     <div class="d-flex py-2 service-charge justify-content-between">
-                        <div class="">Phí vận chuyển</div>
-                        <div class="">0 VNĐ</div>
-                    </div>
-                     <div class="d-flex total-money justify-content-between">
-                        <div class=" ">Tổng cộng</div>
-                        <div class="">250.000 VNĐ</div>
-                    </div>
-                    <div class="mt-3">Nhập mã ưu đãi</div>  
-                    <div class="row">
-                        <div class="col-6">
-                            <input type="text" name="" id="" placeholder="Nhập vào nếu có" class="w-100 h-100 p-2 rounded-2">
-                        </div>
-                        <div class="col-6 apply rounded-2">
-                            <div>ÁP DỤNG</div>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column align-items-center gap-3 pt-5">
-                        <div class="make-pay"><a href="" class="text-decoration-none text-light">TIẾN HÀNH THANH TOÁN</a></div>
-                        <div class="continue-order "><a href="" class="text-decoration-none text-light">TIẾP TỤC MUA HÀNG</a></div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-
-    <div class="bg-item text-center mt-xxl-5 mt-3 text-feedback">
-    
-      <h4 class="fw-bold heading-feedback">BẠN CÓ HÀI LÒNG VỚI SẢN PHẨM VÀ DỊCH VỤ CỦA <a href="index.html" class="feedback">QCcap</a> KHÔNG?</h4>
-      <h6 class="pt-2 fw-semibold">XIN HÃY CHO CHÚNG TÔI BIẾT Ý KIẾN CỦA BẠN <a href="contact.html" class="feedback">TẠI ĐÂY</a>
-      </h6>
-    
   </div>
 
+  <div class="bg-item text-center mt-xl-5 mt-3 text-feedback">
+    <h5 class="fw-bold heading-feedback">BẠN CÓ HÀI LÒNG VỚI SẢN PHẨM VÀ DỊCH VỤ CỦA <a href="index.html"
+        class="feedback">QCcap</a> KHÔNG?</h5>
+    <h6 class="pt-2 fw-semibold">XIN HÃY CHO CHÚNG TÔI BIẾT Ý KIẾN CỦA BẠN <a href="contact.html" class="feedback">TẠI
+        ĐÂY</a>
+    </h6>
+  </div>
+  
   <footer>
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-xxl-3 col-md-12 text-center py-xxl-4 py-4">
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-6 text-center about-footer">
             <img src="/img/logo1.png" alt="">
-            <p class="pt-xxl-3 pt-3 paragraph">QCcap - chuyên kinh doanh các loại mũ nón thời trang cao cấp luôn cập nhật
+            <p class="pt-xl-3 pt-3 paragraph">QCcap - chuyên kinh doanh các loại mũ nón thời trang cao cấp
+              luôn
+              cập
+              nhật
               những mẫu mới nhất vì chúng tôi muốn bạn đẹp nhất.</p>
-
+  
           </div>
-
-          <div class="col-xxl-3 col-md-4 paragraph py-xxl-4 ps-4 pb-3 ps-md-0">
-            <h5 class="fw-bold pb-2 ">DANH MỤC SẢN PHẨM</h5>
-            <div class="px-xxl-3 ps-4 ps-md-0">
+  
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 paragraph py-sm-4 py-xl-4 ps-4 pb-3 ps-md-0 py-lg-4 pt-sm-0">
+            <h5 class="fw-bold pb-2 title-footer">DANH MỤC SẢN PHẨM</h5>
+            <div class="px-xl-3 ps-4 ps-md-0 px-lg-3">
               <div class="d-flex gap-2">
                 <i class="bi bi-caret-right-fill"></i>
                 <a href="" class="text-footer">
                   <p>Mũ lưỡi trai</p>
                 </a>
               </div>
-
+  
               <div class="d-flex gap-2">
                 <i class="bi bi-caret-right-fill"></i>
                 <a href="" class="text-footer">
                   <p>Mũ Snapblack</p>
                 </a>
               </div>
-
+  
               <div class="d-flex gap-2">
                 <i class="bi bi-caret-right-fill"></i>
                 <a href="" class="text-footer">
                   <p>Mũ Bucket</p>
                 </a>
               </div>
-
+  
               <div class="d-flex gap-2">
                 <i class="bi bi-caret-right-fill"></i>
                 <a href="" class="text-footer">
                   <p>Mũ nồi Beret</p>
                 </a>
               </div>
-
+  
               <div class="d-flex gap-2">
                 <i class="bi bi-caret-right-fill"></i>
                 <a href="" class="text-footer">
                   <p>Mũ len</p>
                 </a>
               </div>
-
-
+  
+  
             </div>
           </div>
-
-          <div class="col-xxl-3 col-md-4 paragraph py-xxl-4 ps-4 pb-3 ps-md-0">
-            <h5 class="fw-bold pb-2">CHÍNH SÁCH BÁN HÀNG</h5>
-            <div class="px-xxl-3 ps-4 ps-md-0">
+  
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 paragraph py-xl-4 ps-4 pb-3 ps-md-0 py-lg-4">
+            <h5 class="fw-bold pb-2 title-footer">CHÍNH SÁCH BÁN HÀNG</h5>
+            <div class="px-xl-3 ps-4 ps-md-0 px-lg-3">
               <div class="d-flex gap-2">
                 <i class="bi bi-caret-right-fill"></i>
                 <a href="" class="text-footer">
                   <p>Chính sách vận chuyển</p>
                 </a>
               </div>
-
+  
               <div class="d-flex gap-2">
                 <i class="bi bi-caret-right-fill"></i>
                 <a href="" class="text-footer">
                   <p>Chính sách đổi trả</p>
                 </a>
               </div>
-
+  
               <div class="d-flex gap-2">
                 <i class="bi bi-caret-right-fill"></i>
                 <a href="" class="text-footer">
                   <p>Điều khoản dịch vụ</p>
                 </a>
               </div>
-
+  
               <div class="d-flex gap-2">
                 <i class="bi bi-caret-right-fill"></i>
                 <a href="" class="text-footer">
@@ -332,9 +424,9 @@
               </div>
             </div>
           </div>
-
-          <div class="col-xxl-3 col-md-4 paragraph py-xxl-4 ps-4 pb-3 ps-md-0">
-            <h5 class="fw-bold pb-2">LIÊN HỆ VỚI CHÚNG TÔI</h5>
+  
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 paragraph py-xl-4 ps-4 pb-3 ps-md-0 py-lg-4">
+            <h5 class="fw-bold pb-2 title-footer">LIÊN HỆ VỚI CHÚNG TÔI</h5>
             <div class="px-xxl-3">
               <p>Hotline: 0348.070.202 </p>
               <p>Email: qccap@gmail.com</p>
@@ -350,18 +442,21 @@
         </div>
       </div>
     </div>
-
+  
     <div class="footer-bottom">
       <div class="container">
         <div class="d-flex justify-content-between py-2 align-items-center">
-          <div>Bản quyền thuộc về QCcap - Copyright 2022 @QCcap.com.vn</div>
-          <div class="d-flex gap-3">
+          <div class="text-footer-bottom">Bản quyền thuộc về QCcap - Copyright 2022 @QCcap.com.vn</div>
+  
+  
+          <div class="d-flex gap-3 gap-sm-1">
             <div class="atm">
               ATM
             </div>
             <div class="atm">VISA</div>
             <div class="atm">PayPal</div>
           </div>
+  
         </div>
       </div>
     </div>
@@ -370,10 +465,26 @@
   <div id="backtop">
     <i class="bi bi-caret-up-fill"></i>
   </div>
+  <div id="toolbar">
+    <ul>
+      <li><a href="">
+          <img src="/img/icon-mess.svg" alt="" class="swing">
+          <span>Facebook</span>
+        </a></li>
+      <li><a href="">
+          <img src="/img/icon-zalo.svg" alt="" class="zalo">
+          <span>Chat Zalo</span>
+        </a></li>
+      <li><a href="">
+          <img src="/img/icon-phone.svg" alt="" class="swing">
+          <span>Gọi ngay</span>
+        </a></li>
+    </ul>
+  </div>
 
 
 
-    <script src="./js/pay.js" type="module"></script>
+  <script src="./js/pay.js" type="module"></script>
 </body>
 
 </html>

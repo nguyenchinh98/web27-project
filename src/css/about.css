@@ -13,6 +13,42 @@
     padding-top: 20px;
 }
 
+#toolbar{
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+}
+
+#toolbar ul li{
+    list-style: none;
+    margin: 8px 0;
+}
+#toolbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+#toolbar ul li a span{
+    background-color: #01a2fc;
+    padding: 6px 8px;
+    border-radius: 8px;
+    opacity: 0;
+}
+#toolbar ul li a:hover span{
+    opacity: 1;
+}
+.swing{
+    animation: swing ease-in-out 0.2s infinite alternate;
+    transform-origin: center;
+}
+.swing:after{
+    content: '';
+    z-index: 0;
+    transform: rotate(90deg);
+}
+
+@keyframes swing {
+    0% { transform: rotate(30deg); }
+}
 
 
 
