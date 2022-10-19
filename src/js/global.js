@@ -3,5 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
 import "../css/global.css";
 import "../css/about.css";
+import "../css/blog.css";
+import "../css/contact.css";
 
-import "./backtop.js"
+import "./backtop.js";

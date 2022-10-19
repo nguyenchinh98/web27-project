@@ -122,12 +122,15 @@ img{
 
 /* Card-product */
 
-.rate{
+/* .rate{
     color: #328D9D;
     font-weight: 600;
-}
+} */
 .price{
     font-weight: 700;
+    color: #328D9D;
+    
+
 }
 
 
@@ -171,7 +174,7 @@ img{
     animation: iconFly 0.5s forwards;
 }
 .icon-cart:hover{
-    color: #328D9D;
+    color: #cc9a4f;
     transform: scale(1.1);
 }
 .icon-cart {
@@ -180,7 +183,9 @@ img{
         top: 30px;
         left: 30px;
         opacity: 0;
-        color: #cc9a4f;
+        color: #328D9D;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
     }
 @-webkit-keyframes iconFly{
     from{
