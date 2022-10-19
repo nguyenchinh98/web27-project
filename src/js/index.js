@@ -9,9 +9,8 @@ import "../css/global.css";
 import "../css/index.css";
 import "./backtop.js";
 
-import { products1 } from "./db";
-import {products2 } from "./db";
-import { products3 } from "./db";
+import { products1, products2, products3 } from "./db";
+
 
 const addToCart = (event) => {
   event.preventDefault();

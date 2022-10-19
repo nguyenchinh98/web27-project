@@ -178,33 +178,35 @@
 
     <div class="row justify-content-between">
       <div class="col-8">
-        <div class="row fw-bold align-items-center">
-          <div class="col-xl-6 col-5 text-center">SẢN PHẨM</div>
-          <div class="col-xl-2 col-2 text-center">GIÁ</div>
-          <div class="col-xl-2 col-2 text-center">SỐ LƯỢNG</div>
-          <div class="col-xl-2 col-3 text-center">TẠM TÍNH</div>
+        <div class="table-reponsive">
+          <table>
+            <thead>
+              <tr>
+                <th>SẢN PHẨM</th>
+                <th>GIÁ</th>
+                <th>SỐ LƯỢNG</th>
+                <th>TẠM TÍNH</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="item">
+                <td><img src="/img/anh1.svg" alt="" style="width:50px"></td>
+                <td>250.000 vnđ</td>
+                <td>
+                  <button class="ebb">-</button>
+                  <span class="quantily ms-2 me-2">1</span>
+                  <button class="rise">+</button>
+                </td>
+                <td>250.000 vnđ</td>
+                <td><button class="btn-del"><i class="bi bi-x-circle fs-4"></i></button></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <div class="row align-items-center product-item my-xl-3">
-          <div class="col-xl-1 col-1">
-            <a href="" class="cancel"><i class="bi bi-x-circle fs-4"></i></a>
-          </div>
-          <div class="col-4 col-xl-5 d-flex align-items-center gap-xxl-2">
-            <img src="/img/cart-1.svg" alt="" class="thumnail-product" />
-            <div>Mũ lưỡi trai Ny M102 màu đen hot 2022</div>
-          </div>
-          <div class="col-xl-2 col-2">250.000 VNĐ</div>
-          <div class="col-xl-2 col-2">
-            <div class="d-flex num-product justify-content-between align-items-center">
-              <div class=""><a href="" class="ebb">-</a></div>
-              <div class="">1</div>
-              <div class=""><a href="" class="rise">+</a></div>
-            </div>
-          </div>
-          <div class="col-xl-2 col-3 text-center">250.000 VNĐ</div>
-        </div>
 
-        <div class="d-flex justify-content-center my-3">
+        <div class="d-flex justify-content-center my-5">
           <div class="col-xl-6 col-6">
             <div class=" continue-order d-flex gap-2 justify-content-center">
               <i class="bi bi-arrow-left-circle-fill"></i>
@@ -217,7 +219,7 @@
         </div>
       </div>
 
-      <div class="col-4 ">
+      <div class="col-4 cart-right">
         <h5 class="text-center fw-bold">CỘNG VÀO GIỎ HÀNG</h5>
         <div class="d-flex justify-content-between temporary my-xl-3 my-3">
           <div>Tạm tính</div>
