@@ -86,30 +86,17 @@
                       </thead>
                       <tbody class="cart-list">
 
-                        <template id="item">
-                          <tr class="item">
-                            <td class="d-flex align-items-center">
-                              <img src="${product.thumnail }" alt="" style="width:50px" class="thumnail-product">
-                              <div class="description-product"> ${ product.description }</div>
-                            </td>
-                            <td class="text-center">${ product.price }</td>
-                            <td class="text-center">
-                              <button class="ebb btn-down">-</button>
-                              <span class="quantity">${ quantity }</span>
-                              <button class="rise btn-up">+</button>
-                            </td>
-                            <td class="text-center">250.000 vnđ</td>
-                            <td><button class="btn-del"><i class="bi bi-x-circle fs-4"></i></button></td>
-                          </tr>
+                        
                           
-                        </template>
+                        
+
                         <tr>
                           <td class="pt-4 fw-bold">Tổng Tiền: 0 VNĐ</td>
                         </tr>
                       </tbody>
                     </table>
                     <div class="d-flex flex-column gap-2 mt-3">
-                      <button class="watch-cart"><a href="cart.html" class="text-decoration-none text-light">XEM GIỎ HÀNG</a></button>
+                      <button class="watch-cart"><a href="" class="text-decoration-none text-light">XEM GIỎ HÀNG</a></button>
                       <button class="order-cart"><a href="" class="text-decoration-none text-light">TIẾN HÀNH ĐẶT HÀNG</a></button>
                     </div>
                   </div>
@@ -1074,6 +1061,25 @@
       </a>
     </div>
   </script>
+
+  
+    <template id="item">
+      <tr class="item">
+          <td class="d-flex align-items-center">
+            <img src="${product.thumnail}" alt="" style="width:50px" class="thumnail-product">
+              <div class="description-product">${product.description} </div>
+          </td>
+          <td class="text-center">${product.price}</td>
+          <td class="text-center">
+            <button class="ebb btn-down">-</button>
+            <span class="quantity">2</span>
+            <button class="rise btn-up">+</button>
+          </td>
+          <td class="text-center">250.000 vnđ</td>
+          <td><button class="btn-del"><i class="bi bi-x-circle fs-4"></i></button></td>
+        </tr>
+    </template>
+  
 
   <script type="module" src="./js/index.js"></script>
 </body>

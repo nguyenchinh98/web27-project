@@ -5,9 +5,10 @@ import $ from  "jquery";
 import _ from "lodash";
 import "../css/global.css";
 import "../css/item.css";
-import { addToCart } from "./utils";
 import "./backtop.js";
-import { products1, products2, products3 } from "./db";
+import { products1, products2, products3, products} from "./db";
+
+
 
 
 
@@ -43,6 +44,18 @@ $(function () {
   const dom3 = $(template3(product3));
   $(".item-product").append(dom3);
 });
+
+$(function () {
+  const url = new URL(this.location.href);
+  const id = Number(url.searchParams.get("id"));
+
+  const product4 = _.find(products, { id });
+  const productItemTemplate4 = $("#productItem").html();
+  const template4 = _.template(productItemTemplate4);
+  const dom4 = $(template4(product4));
+  $(".item-product").append(dom4);
+});
+
 
 
 

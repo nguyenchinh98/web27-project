@@ -634,25 +634,25 @@
 
     <script type="text/html" id="product">
         <div class="col-xl-3 col-lg-4 col-6 mt-3">
-                
-                    <div class="bg-item cart-product card">
-                        <img src="${thumnail}" alt="" style="min-width: 100%;" class="thumnail-product">
-                        <div class="p-2">
-                            <div class="description paragraph">
-                                ${description}
+                    <a href="item.html?id=${ id }" class="text-decoration-none">
+                        <div class="bg-item cart-product card">
+                            <img src="${thumnail}" alt="" style="min-width: 100%;" class="thumnail-product">
+                            <div class="p-2">
+                                <div class="description paragraph">
+                                    ${description}
+                                </div>
+                                <div class="rate">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="price">${price}</div>
                             </div>
-                            <div class="rate">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                            </div>
-                            <div class="price">${price}</div>
+                            <button class="icon-cart btn-cart"><i class="bi bi-bag-plus-fill"></i></button>
                         </div>
-                        <button class="icon-cart btn-cart"><i class="bi bi-bag-plus-fill"></i></button>
-                    </div>
-                
+                    </a>
             </div>
     </script>
     <script src="./js/product.js" type="module"></script>

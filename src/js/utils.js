@@ -4,12 +4,13 @@ export const addToCart = (event) => {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   const item = _.find(cart, { product: event.data.id });
   if (item) {
-    item.quantily += 1;
+    item.quantity += 1;
   } else {
     cart.push({
       product: event.data.id,
-      quantily: 1,
+      quantity: 1,
     });
   }
   localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Thêm thành công sản phẩm vào giỏ hàng");
 };
