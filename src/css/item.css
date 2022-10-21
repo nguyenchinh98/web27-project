@@ -1,11 +1,13 @@
 .main-path {
     text-decoration: none;
     color: #328D9D;
+    font-weight: 700;
 }
 
 .main-sub {
     text-decoration: none;
     color: #555555;
+    font-weight: 700;
 }
 
 
@@ -346,7 +348,7 @@
         padding: 10px;
     }
     .main-path, .main-sub{
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
