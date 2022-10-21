@@ -70,7 +70,7 @@
 
     .path {
         margin-top: 56.36px;
-        padding: px;
+        padding: 4px 0;
     }
 
 
@@ -79,13 +79,11 @@
         font-size: 14px;
     }
 
-    .heading-feedback {
+    .heading-feedback{
         font-size: 16px;
     }
-
-    h6 {
+    .sub-feedback{
         font-size: 12px;
-
     }
 
     .product-portfolio {
@@ -138,15 +136,25 @@
         border-left: none;
     }
     .title-footer{
-        padding-top: 24px;
         font-size: 14px;
+    }
+    .text-footer-bottom{
+        font-size: 12px;
+    }
+    .atm{
+        font-size: 12px;
+    }
+
+}
+@media (min-width:576px) {
+    .title-footer{
+        font-size: 16px;
+        padding-top: 24px;
     }
     .about-footer{
         padding-top: 30px;
     }
-
 }
-
 /* Tablet-Mini */
 
 @media (min-width: 768px) {
@@ -160,34 +168,26 @@
 
     .path {
         margin-top: 77.82px;
-        padding: px;
+        padding: 6px;
     }
-
-    .main-path,
-    .main-sub {
-        font-size: 14px;
-    }
-
-    .heading-feedback {
+    .heading-feedback{
         font-size: 18px;
+        padding: 8px;
     }
-
-    h6 {
-        font-size: 14px;
+    .sub-feedback{
+        font-size: 16px;
     }
     .title-footer{
         font-size: 16px;
     }
-    .about-footer{
-        padding-top: 50px;
-    }
+    
 }
 
 /* Tablet */
 @media (min-width:990px) {
     .path {
         margin-top: 88px;
-        padding: px;
+        padding: 8px;
     }
 
     .main-menu li a {
@@ -204,6 +204,13 @@
     .main-path,
     .main-sub {
         font-size: 16px;
+    }
+    .heading-feedback{
+        font-size: 22px;
+        padding: 8px;
+    }
+    .sub-feedback{
+        font-size: 18px;
     }
 
 }
@@ -224,13 +231,13 @@
 
     .path {
         margin-top: 88px;
-        padding: px;
+        padding: 8px;
     }
 
 
     .main-path,
     .main-sub {
-        font-size: 16px;
+        font-size: 14px;
     }
 
 

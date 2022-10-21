@@ -8,9 +8,6 @@ import "../css/cart.css";
 import "./backtop.js";
 
 import { products1 } from "./db";
-import { products2 } from "./db";
-import { products3 } from "./db";
-
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -48,7 +45,7 @@ const decrement = (event) => {
 
 $(function () {
   const items = _.map(_.cloneDeep(cart), (item) => {
-    item.product = _.find(products, { id: item.product });
+    item.product = _.find(products1, { id: item.product });
 
     return item;
   });
@@ -58,9 +55,11 @@ $(function () {
       const itemTemplate = $("#item").html();
       const item = _.template(itemTemplate);
       const dom = $(item(i));
-      dom.find(".btn-delete").on("click", i, deleteItem);
+
+      dom.find(".btn-del").on("click", i, deleteItem);
       dom.find(".btn-up").on("click", i, increment);
       dom.find(".btn-down").on("click", i, decrement);
+
       return dom;
     })
   );

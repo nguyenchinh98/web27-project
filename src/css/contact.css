@@ -1,13 +1,11 @@
 .main-path {
     text-decoration: none;
     color: #328D9D;
-    font-size: 18px;
 }
 
 .main-sub {
     text-decoration: none;
     color: #555555;
-    font-size: 18px;
 }
 
 .heading-contact {
@@ -81,6 +79,9 @@
 
 /* Mobile */
 @media screen and (min-width:390px) {
+    .heading-contact{
+        font-size: 24px;
+    }
 
     .main-menu li a {
         display: none;
@@ -91,26 +92,50 @@
     }
 
     .path {
-        margin-top: 57.1px;
-        padding: 8px 0;
+        margin-top: 56.64px;
+        padding: 4px 0;
+        
+    }
+    .main-path, .main-sub{
+        font-size: 14px;
+    }
+    .heading-feedback{
+        font-size: 16px;
+    }
+    .sub-feedback{
+        font-size: 12px;
     }
 
     .paragraph {
         font-size: 16px;
     }
-    .title-footer{
-        padding-top: 24px;
+    
+   .title-footer{
         font-size: 14px;
+    }
+    .text-footer-bottom{
+        font-size: 12px;
+    }
+    .atm{
+        font-size: 12px;
+    }
+
+}
+/* ********** */
+@media (min-width:576px) {
+    .title-footer{
+        font-size: 16px;
+        padding-top: 24px;
     }
     .about-footer{
         padding-top: 30px;
     }
-
 }
-
 /* Tablet-Mini - md */
-
 @media (min-width: 768px) {
+    .heading-contact{
+        font-size: 28px;
+    }
     .main-menu li a {
         display: none;
     }
@@ -121,14 +146,19 @@
 
     .path {
         margin-top: 77.81px;
+        padding: 6px;
+    }
+    .heading-feedback{
+        font-size: 18px;
         padding: 8px;
+    }
+    .sub-feedback{
+        font-size: 16px;
     }
     .title-footer{
         font-size: 16px;
     }
-    .about-footer{
-        padding-top: 50px;
-    }
+    
 }
 
 /* Tablet - lg*/
@@ -136,6 +166,9 @@
     .path {
         margin-top: 88px;
         padding: 8px;
+    }
+    .main-path, .main-sub{
+        font-size: 16px;
     }
 
     .main-menu li a {
@@ -147,6 +180,13 @@
 
     .icon-header>.dropdown {
         display: block;
+    }
+     .heading-feedback{
+        font-size: 22px;
+        padding: 8px;
+    }
+    .sub-feedback{
+        font-size: 18px;
     }
 }
 
@@ -176,7 +216,7 @@
 }
 
 /* Full HD- xxl */
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
     .main-menu li a {
         display: block;
         font-size: 18px;
@@ -198,4 +238,4 @@
     }
 
 
-}
+} */

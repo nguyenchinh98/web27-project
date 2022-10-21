@@ -41,6 +41,7 @@
     text-align: center;
     padding: 8px 10px;
     font-weight: 700;
+    border: none;
 }
 
 .add-cart:hover {
@@ -233,16 +234,21 @@
 
     .path {
         margin-top: 56.36px;
-        padding: 4px;
+        padding: 4px 0;
     }
     
     
     .main-path, .main-sub{
         font-size: 14px;
     }
+    .heading-feedback{
+        font-size: 16px;
+    }
+    .sub-feedback{
+        font-size: 12px;
+    }
     .title-footer{
         font-size: 14px;
-        padding-top: 24px;
     }
     .text-footer-bottom{
         font-size: 12px;
@@ -250,14 +256,18 @@
     .atm{
         font-size: 12px;
     }
+    
+    
+}
+/* ********** */
+@media (min-width:576px) {
     .title-footer{
+        font-size: 16px;
         padding-top: 24px;
-        font-size: 14px;
     }
     .about-footer{
         padding-top: 30px;
     }
-    
 }
 /* Tablet-Mini - md */
 
@@ -270,18 +280,20 @@
     }
     .path {
         margin-top: 77.8px;
-        padding: 8px;
+        padding: 6px;
     }
     
-    .main-path, .main-sub{
-        font-size: 14px;
+     .heading-feedback{
+        font-size: 18px;
+        padding: 8px;
+    }
+    .sub-feedback{
+        font-size: 16px;
     }
     .title-footer{
         font-size: 16px;
     }
-    .about-footer{
-        padding-top: 50px;
-    }
+    
     
 }
 
@@ -304,6 +316,13 @@
     
     .main-path, .main-sub{
         font-size: 16px;
+    }
+     .heading-feedback{
+        font-size: 22px;
+        padding: 8px;
+    }
+    .sub-feedback{
+        font-size: 18px;
     }
 
 }

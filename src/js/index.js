@@ -10,25 +10,24 @@ import "../css/index.css";
 import "./backtop.js";
 
 import { products1, products2, products3 } from "./db";
-
+// import {addToCart} from "./utils";
 
 const addToCart = (event) => {
   event.preventDefault();
-  console.log(event.data)
+  console.log(event.data);
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  const item = _.find(cart, {product: event.data.id });
-  if (item){
-    item.quantily += 1;
+  const item = _.find(cart, { product: event.data.id });
+  if (item) {
+    item.quantity += 1;
   } else {
     cart.push({
       product: event.data.id,
-      quantily: 1,
+      quantity: 1,
     });
   }
   localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Thêm thành công sản phẩm vào giỏ hàng");
 };
-
-
 
 $(function () {
   const productTemplate = $("#product").html();
@@ -38,6 +37,7 @@ $(function () {
     _.map(products1, (p) => {
       const dom = $(product(p));
       dom.find(".btn-cart").on("click", p, addToCart);
+      
       return dom;
   }));
 
@@ -56,9 +56,56 @@ $(function () {
         return dom;
       })
     );
-
-
 });
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+const deleteItem = (event) => {
+  if (confirm("Bạn chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng")) {
+    cart = _.filter(cart, (item) => item.product !== event.data.product.id);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    event.target.closest(".item").remove();
+  }
+};
+
+const increment = (event) => {
+  const product = _.find(cart, { product: event.data.product.id });
+  product.quantity += 1;
+  const item = $(event.target.closest(".item"));
+  item.find(".quantity").text(product.quantity);
+  localStorage.setItem("cart", JSON.stringify(cart));
+};
+
+const decrement = (event) => {
+  const product = _.find(cart, { product: event.data.product.id });
+  if (product.quantity === 1) return;
+  else product.quantity -= 1;
+  const item = $(event.target.closest(".item"));
+  item.find(".quantity").text(product.quantity);
+  localStorage.setItem("cart", JSON.stringify(cart));
+};
+
+$(function () {
+  const items = _.map(_.cloneDeep(cart), (item) => {
+    item.product = _.find(products1, { id: item.product });
+    return item;
+  });
+
+  $(".cart-list").prepend(
+    _.map(items, (i) => {
+      const itemTemplate = $("#item").html();
+      const item = _.template(itemTemplate);
+      const dom = $(item(i));
+      dom.find(".btn-del").on("click", i, deleteItem);
+      dom.find(".btn-up").on("click", i, increment);
+      dom.find(".btn-down").on("click", i, decrement);
+      return dom;
+    })
+  );
+  
+});
+
+
 
 
 

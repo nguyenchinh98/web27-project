@@ -8,10 +8,6 @@
     color: #555555;
 }
 
-.path {
-    margin-top: 96px;
-}
-
 .path-cart {
     color: #328D9D;
     font-weight: 500;
@@ -31,7 +27,7 @@
     opacity: 0.5;
 }
 
-.font-24 {
+.font-path {
     font-size: 24px;
 }
 
@@ -200,14 +196,29 @@ table{
         margin-top: 56.36px;
         padding: 4px;
     }
-    
-    
+    .font-path {
+    font-size: 16px;
+}
     .main-path, .main-sub{
         font-size: 14px;
     }
+    table thead tr th{
+        font-size: 8px;
+    }
+    table tbody tr.item{
+        font-size: 8px;
+        height: 0;
+    }
+
+
+    .heading-feedback{
+        font-size: 16px;
+    }
+    .sub-feedback{
+        font-size: 12px;
+    }
     .title-footer{
         font-size: 14px;
-        padding-top: 24px;
     }
     .text-footer-bottom{
         font-size: 12px;
@@ -215,14 +226,17 @@ table{
     .atm{
         font-size: 12px;
     }
+    
+    
+}
+@media (min-width:576px) {
     .title-footer{
+        font-size: 16px;
         padding-top: 24px;
-        font-size: 14px;
     }
     .about-footer{
         padding-top: 30px;
     }
-    
 }
 /* Tablet-Mini - md */
 
@@ -235,19 +249,19 @@ table{
     }
     .path {
         margin-top: 77.8px;
+        padding: 6px;
+    }
+    .heading-feedback{
+        font-size: 18px;
         padding: 8px;
     }
-    
-    .main-path, .main-sub{
-        font-size: 14px;
+    .sub-feedback{
+        font-size: 16px;
     }
+    
     .title-footer{
         font-size: 16px;
     }
-    .about-footer{
-        padding-top: 50px;
-    }
-    
 }
 
 /* Tablet */
@@ -270,6 +284,20 @@ table{
     .main-path, .main-sub{
         font-size: 16px;
     }
+    .heading-feedback{
+        font-size: 22px;
+        padding: 8px;
+    }
+    .sub-feedback{
+        font-size: 18px;
+    }
+    table thead tr th{
+        font-size: 14px;
+    }
+    table tbody tr td{
+        font-size: 14px;
+        padding: 20px 0;
+    }
 
 }
 
@@ -289,7 +317,7 @@ table{
 
     .path {
         margin-top: 88px;
-        padding: 10px;
+        padding: 8px;
     }
     .main-path, .main-sub{
         font-size: 16px;

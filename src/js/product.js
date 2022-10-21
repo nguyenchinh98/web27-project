@@ -2,9 +2,11 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
 import $ from "jquery";
+import _ from "lodash";
 import "../css/global.css";
 import "../css/product.css";
 import "./backtop.js";
+import { addToCart } from "./utils";
 
 const products = [
     {
@@ -81,35 +83,17 @@ const products = [
     },
 ];
 
-$(".product-list").html(
-    products
-        .map(
-            (p) => `
-            <div class="col-xl-3 col-lg-4 col-6 mt-3">
-                        <div class="bg-item cart-product">
-                            <div class="thumnail-product">
-                                <a href="" class="">
-                                    <img src="${p.thumnail}" alt="" style="min-width: 100%;">
-                                </a>
-                            </div>
-                            <div class="p-2">
-                                <div class="description paragraph">
-                                    ${p.description}
-                                </div>
-                                <div class="rate">
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                </div>
-                                <div class="price">${p.price}</div>
-                            </div>
-    
-                            <a href=""><i class="bi bi-bag-plus-fill icon-cart"></i></a>
-                        </div>
-                    </div>
-                `
-        )
-        .join("")
-);
+
+
+$(function () {
+  const productTemplate = $("#product").html();
+  const product = _.template(productTemplate); // compile
+
+  $(".product-list").append(
+    _.map(products, (p) => {
+      const dom = $(product(p));
+      dom.find(".btn-cart").on("click", p, addToCart);
+      return dom;
+    })
+  );
+});

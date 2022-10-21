@@ -75,7 +75,7 @@
 
     .path {
         margin-top: 56.36px;
-        padding: 8px;
+        padding: 4px 0;
     }
 
 
@@ -87,12 +87,9 @@
     .heading-feedback {
         font-size: 16px;
     }
-
-    h6 {
-        font-size: 14px;
-
+    .sub-feedback{
+        font-size: 12px;
     }
-
     .continue-signin {
         background-color: #196a78;
         padding: 8px;
@@ -108,17 +105,25 @@
     }
 
     .title-footer {
-        padding-top: 24px;
         font-size: 14px;
     }
-
-    .about-footer {
-        padding-top: 30px;
+    .text-footer-bottom{
+        font-size: 12px;
     }
-
-
+    .atm{
+        font-size: 12px;
+    }
 }
 
+@media (min-width:576px) {
+    .title-footer{
+        font-size: 16px;
+        padding-top: 24px;
+    }
+    .about-footer{
+        padding-top: 30px;
+    }
+}
 /* Tablet-Mini */
 
 @media (min-width: 768px) {
@@ -132,21 +137,7 @@
 
     .path {
         margin-top: 77.82px;
-        padding: 10px;
-    }
-
-    .main-path,
-    .main-sub {
-        font-size: 14px;
-    }
-
-    .heading-feedback {
-        font-size: 18px;
-    }
-
-    h6 {
-        font-size: 14px;
-
+        padding: 6px;
     }
 
     .continue-signin {
@@ -155,10 +146,8 @@
         border-radius: 8px;
         color: white;
         width: 150px;
-
         margin: 16px 0;
     }
-
     .p-signin {
         padding: 16px;
     }
@@ -167,15 +156,17 @@
         font-weight: 700;
 
     }
+    .heading-feedback{
+        font-size: 18px;
+        padding: 8px;
+    }
+    .sub-feedback{
+        font-size: 16px;
+    }
 
     .title-footer {
         font-size: 16px;
     }
-
-    .about-footer {
-        padding-top: 50px;
-    }
-
 }
 
 /* Tablet */
@@ -200,6 +191,13 @@
     .main-sub {
         font-size: 16px;
     }
+    .heading-feedback{
+        font-size: 22px;
+        padding: 8px;
+    }
+    .sub-feedback{
+        font-size: 18px;
+    }
 
 }
 
@@ -219,13 +217,13 @@
 
     .path {
         margin-top: 88px;
-        padding: 10px;
+        padding: 8px;
     }
 
 
     .main-path,
     .main-sub {
-        font-size: 16px;
+        font-size: 14px;
     }
 
 

@@ -69,6 +69,10 @@
 
     .path {
         margin-top: 56.36px;
+        padding: 4px 0;
+    }
+    .main-path, .main-sub{
+        font-size: 14px;
     }
     .paragraph{
         font-size: 16px;
@@ -92,17 +96,35 @@
     background-color: #81cddd;
     padding: 10px;
     border-radius: 8px;
-}
-.title-footer{
-        padding-top: 24px;
+    }
+    .heading-feedback{
+        font-size: 16px;
+    }
+    .sub-feedback{
+        font-size: 12px;
+    }
+    .title-footer{
         font-size: 14px;
+    }
+    .text-footer-bottom{
+        font-size: 12px;
+    }
+    .atm{
+        font-size: 12px;
+    }
+
+}
+
+/* *************** */
+@media (min-width:576px) {
+    .title-footer{
+        font-size: 16px;
+        padding-top: 24px;
     }
     .about-footer{
         padding-top: 30px;
     }
-
 }
-
 /* Tablet-Mini - md */
 
 @media (min-width: 768px){
@@ -114,7 +136,7 @@
     }
     .path {
         margin-top: 77.81px;
-        padding: px;
+        padding: 8px;
     }
     .title-blog {
         font-size: 32px;
@@ -126,20 +148,25 @@
         padding: 12px 16px;
      }
 
-     .title-footer{
+    .heading-feedback{
+        font-size: 18px;
+        padding: 8px;
+    }
+    .sub-feedback{
+       font-size: 16px;
+    }
+
+    .title-footer{
         font-size: 16px;
     }
-    .about-footer{
-        padding-top: 50px;
-    }
+    
 }
-
 
 /* Tablet - lg*/
 @media (min-width:990px) {
     .path {
         margin-top: 88px;
-        padding: px;
+        padding: 8px;
     }
     .main-menu li a {
         display: block;
@@ -154,7 +181,16 @@
     .btn-blog {
         padding: 12px 16px;
      }
-    
+    .main-path, .main-sub{
+        font-size: 16px;
+    }
+    .heading-feedback{
+        font-size: 22px;
+        padding: 8px;
+    }
+    .sub-feedback{
+        font-size: 18px;
+    }
 
 }
 
@@ -174,7 +210,7 @@
 
     .path {
         margin-top: 88px;
-        padding: 6px;
+        padding: 8px;
     }
 
     .paragraph{
@@ -193,7 +229,7 @@
     
 
 /* Full HD- xxl */
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
      .main-menu li a {
         display: block;
         font-size: 16px;
@@ -222,7 +258,7 @@
      }
         
 
-}
+} */
 
 #toolbar{
     position: fixed;
