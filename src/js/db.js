@@ -85,7 +85,7 @@ export const products3 = [
   {
     id: 11,
     thumnail: "/img/anh11.svg",
-    description: "Mũ Snapback trơn Classic màu đen",
+    description: "Mũ Snapback trơn Classic màu đen - 2022",
     price: "175.000 VNĐ",
     category: "Mũ SnapBack HipHop",
   },
