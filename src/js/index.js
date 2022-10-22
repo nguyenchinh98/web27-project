@@ -11,24 +11,7 @@ import "../css/index.css";
 import "./backtop.js";
 
 import { products1, products2, products3 } from "./db";
-
-
-const addToCart = (event) => {
-  event.preventDefault();
-  console.log(event.data);
-  const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  const item = _.find(cart, { product: event.data.id });
-  if (item) {
-    item.quantity += 1;
-  } else {
-    cart.push({
-      product: event.data.id,
-      quantity: 1,
-    });
-  }
-  localStorage.setItem("cart", JSON.stringify(cart));
-  alert("Thêm thành công sản phẩm vào giỏ hàng");
-};
+import { addToCart } from "./utils"
 
 
 $(function () {
@@ -59,12 +42,23 @@ $(function () {
     );
 });
 
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+$(function () {
+  const items = _.map(_.cloneDeep(cart), (item) => {
+    item.product = _.find(products1, { id: item.product });
 
+    return item;
+  });
 
-
-
-
-
+  $(".cart-list").prepend(
+    _.map(items, (i) => {
+      const itemTemplate = $("#item").html();
+      const item = _.template(itemTemplate);
+      const dom = $(item(i));
+      return dom;
+    })
+  );
+});
 
 
 

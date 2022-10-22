@@ -6,7 +6,6 @@ import _ from "lodash";
 import "../css/global.css";
 import "../css/cart.css";
 import "./backtop.js";
-
 import { products1, products2, products3, products } from "./db";
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];

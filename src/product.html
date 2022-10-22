@@ -64,7 +64,7 @@
                                 <i class="bi bi-cart3 white fs-4"></i>
                             </button>
     
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            <div class="offcanvas offcanvas-end bg-cart" tabindex="-1" id="offcanvasRight"
                                 aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="offcanvasRightLabel">GIỎ HÀNG</h5>
@@ -72,6 +72,45 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
+                                    <div class="table-reponsive">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>SẢN PHẨM</th>
+                                                    <th class="text-center">GIÁ</th>
+                                                    <th class="text-center">SỐ LƯỢNG</th>
+                                                    <th class="text-center">TẠM TÍNH</th>
+                                                    <th class="text-center"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="cart-list">
+                                                <template id="item">
+                                                    <tr class="item">
+                                                        <td class="d-flex align-items-center">
+                                                            <img src="${product.thumnail}" alt="" style="width:50px" class="thumnail-product">
+                                                            <div class="description-product">${product.description} </div>
+                                                        </td>
+                                                        <td class="text-center">${product.price}</td>
+                                                        <td class="text-center">
+                                                            <button class="ebb btn-down">-</button>
+                                                            <span class="quantity">${ quantity}</span>
+                                                            <button class="rise btn-up">+</button>
+                                                        </td>
+                                                        <td class="text-center">250.000 vnđ</td>
+                                                        <td><button class="btn-del"><i class="bi bi-x-circle fs-4"></i></button></td>
+                                                    </tr>
+                                                </template>
+                                                <tr>
+                                                    <td class="pt-4 fw-bold">Tổng Tiền: 0 VNĐ</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="d-flex flex-column gap-2 mt-3">
+                                            <button class="watch-cart"><a href="cart.html" class="text-decoration-none text-light">XEM GIỎ HÀNG</a></button>
+                                            <button class="order-cart"><a href="pay.html" class="text-decoration-none text-light">TIẾN HÀNH ĐẶT
+                                                    HÀNG</a></button>
+                                        </div>
+                                    </div>
     
                                 </div>
                             </div>

@@ -119,15 +119,12 @@ table{
 table thead tr th {
     font-size: 12px;
 }
-
-
 .thumnail-product{
     padding-right: 4px;
 }
 .item{
     border-top: 1px solid gray;
 }
-
 .btn-up, .btn-down{
     border: none;
 }

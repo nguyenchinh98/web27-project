@@ -1,3 +1,5 @@
+import _ from "lodash";
+
 export const addToCart = (event) => {
   event.preventDefault();
   console.log(event.data);

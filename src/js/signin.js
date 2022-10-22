@@ -19,7 +19,7 @@ btnLogin.addEventListener("click", (e) => {
   console.log(user);
   let json = JSON.stringify(user);
   if (!email.value || !password.value) {
-    alert("vui long nhap day du thong tin");
+    alert("Vui Lòng Điền Thông Tin Của Bạn!");
   }
   if (localStorage.getItem(email.value) == json) {
     alert("dang nhap thanh cong");

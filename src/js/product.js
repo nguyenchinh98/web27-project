@@ -6,25 +6,9 @@ import _ from "lodash";
 import "../css/global.css";
 import "../css/product.css";
 import "./backtop.js";
-// import { addToCart } from "./utils";
+import { addToCart } from "./utils";
 import {products} from "./db"
 
-const addToCart = (event) => {
-  event.preventDefault();
-  console.log(event.data);
-  const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  const item = _.find(cart, { product: event.data.id });
-  if (item) {
-    item.quantity += 1;
-  } else {
-    cart.push({
-      product: event.data.id,
-      quantity: 1,
-    });
-  }
-  localStorage.setItem("cart", JSON.stringify(cart));
-  alert("Thêm thành công sản phẩm vào giỏ hàng");
-};
 
 $(function () {
   const productTemplate = $("#product").html();
@@ -34,6 +18,25 @@ $(function () {
     _.map(products, (p) => {
       const dom = $(product(p));
       dom.find(".btn-cart").on("click", p, addToCart);
+      return dom;
+    })
+  );
+});
+
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+$(function () {
+  const items = _.map(_.cloneDeep(cart), (item) => {
+    item.product = _.find(products, { id: item.product });
+
+    return item;
+  });
+
+  $(".cart-list").prepend(
+    _.map(items, (i) => {
+      const itemTemplate = $("#item").html();
+      const item = _.template(itemTemplate);
+      const dom = $(item(i));
       return dom;
     })
   );
