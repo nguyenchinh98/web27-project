@@ -10,6 +10,18 @@
     font-weight: 700;
 }
 
+.img-detail img{
+    transition: all 0.2s ease-in-out;
+    border: 1px solid;
+}
+.img-detail img:hover{
+    /* border: 1px solid; */
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
 
 .amount-product {
     padding: 8px;
