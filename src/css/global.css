@@ -25,7 +25,10 @@ img{
     position: relative;
 }
 
-
+.btn-menu{
+    border: none;
+    background-color: #01a0fc00;
+}
 .main-menu li a {
     text-decoration: none;
     color: white;

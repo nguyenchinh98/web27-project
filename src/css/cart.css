@@ -52,7 +52,7 @@ table{
     background-color: #329d7f;
     color: white;
     padding: 8px 0px;
-    width: 350px;
+    width: 300px;
 }
 /* .continue-product{
     color: #328D9D;
@@ -69,12 +69,13 @@ table{
     color: white;
     background-color: #328D9D;
     padding: 8px 0;
-    width: 350px;
+    width: 300px;
 }
 
 .update-cart:hover {
     background-color: #173e45;
     cursor: pointer;
+    color: white;
 }
 
 
@@ -121,7 +122,7 @@ table{
 .order-product {
     background-color: #328D9D;
     color: white;
-    padding: 10px 0px;
+    padding: 8px 16px;
 }
 
 .order-product:hover {

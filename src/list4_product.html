@@ -17,7 +17,7 @@
                         </a>
                     </div>
                     <ul class="main-menu col-8 d-flex justify-content-center gap-lg-2">
-                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="">TRANG CHỦ</a></li>
                         <li><a href="about.html">GIỚI THIỆU
     
                             </a></li>
@@ -31,7 +31,7 @@
                                 <li><a href="list2_product.html">Mũ bucket</a></li>
                                 <li><a href="list3_product.html">Mũ nồi beret</a></li>
                                 <li><a href="list4_product.html">Mũ len</a></li>
-                                
+    
                             </ul>
                         </li>
                         <li><a href="blog.html">BLOG</a></li>
@@ -65,29 +65,34 @@
                         <nav class="navbar d-xl-none d-block d-lg-none">
                             <div class="container justify-content-end p-0">
     
-                                <a class="" type="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                                    aria-controls="offcanvasNavbar">
-                                    <i class="bi bi-list text-light fs-4"></i>
-                                </a>
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                <button class="btn-menu">
+                                    <a class="" type="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                                        aria-controls="offcanvasNavbar">
+                                        <i class="bi bi-list text-light fs-4"></i>
+                                    </a>
+                                </button>
+                                <div class="offcanvas offcanvas-end bg-nav" tabindex="-1" id="offcanvasNavbar"
                                     aria-labelledby="offcanvasNavbarLabel">
-                                    <div class="offcanvas-header">
-                                        <a href=""><img src="/img/logo1.png" alt=""></a>
+                                    <div class="offcanvas-header ">
+                                        <a href="" class="ps-3"><img src="/img/logo1.png" alt=""></a>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
                                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                            <li class="nav-item">
+                                            <li class="nav-item d-flex align-items-center gap-2 ps-3">
+                                                <i class="bi bi-house-door"></i>
                                                 <a class="nav-link active fw-bold" aria-current="page"
                                                     href="index.html">TRANG CHỦ</a>
                                             </li>
-                                            <li class="nav-item">
+                                            <li class="nav-item d-flex align-items-center gap-2 ps-3">
+                                                <i class="bi bi-file-person"></i>
                                                 <a class="nav-link active fw-bold" aria-current="page"
                                                     href="about.html">GIỚI THIỆU</a>
                                             </li>
     
-                                            <li class="nav-item dropdown">
+                                            <li class="nav-item dropdown d-flex align-items-center gap-2 ps-3">
+                                                <i class="bi bi-gift"></i>
                                                 <a class="nav-link active dropdown-toggle fw-bold" href="product.html"
                                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                     SẢN PHẨM
@@ -102,22 +107,27 @@
                                                     <li><a class="dropdown-item" href="list3_product.html">Mũ Nồi Beret</a>
                                                     </li>
                                                     <li><a class="dropdown-item" href="list4_product.html">Mũ Len</a></li>
-                                                    
+    
                                                 </ul>
                                             </li>
-                                            <li class="nav-item">
+                                            <li class="nav-item d-flex align-items-center gap-2 ps-3">
+                                                <i class="bi bi-book-half"></i>
                                                 <a class="nav-link active fw-bold" aria-current="page"
                                                     href="blog.html">BLOG</a>
                                             </li>
-                                            <li class="nav-item">
+                                            <li class="nav-item d-flex align-items-center gap-2 ps-3">
+                                                <i class="bi bi-whatsapp"></i>
                                                 <a class="nav-link active fw-bold" aria-current="page"
                                                     href="contact.html">LIÊN HỆ</a>
                                             </li>
                                             <div class="dropdown">
                                                 <button class="btn" type="button" data-bs-toggle="dropdown"
                                                     aria-expanded="false">
-    
-                                                    <a href=""><i class="bi bi-person white fs-4 text-dark"></i></a>
+                                                    <a href=""
+                                                        class="d-flex align-items-center gap-1 text-decoration-none text-dark fw-bold">
+                                                        <i class="bi bi-person white fs-4 text-dark"></i>
+                                                        <div>TÀI KHOẢN</div>
+                                                    </a>
                                                 </button>
                                                 <ul class="dropdown-menu user">
                                                     <li><a class="dropdown-item" href="signup.html">ĐĂNG KÝ</a></li>
@@ -125,19 +135,24 @@
                                                     <li><a class="dropdown-item" href="#">LỊCH SỬ MUA HÀNG</a></li>
                                                 </ul>
                                             </div>
+                                            <div class="dropdown">
+                                                <button class="btn" type="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <a href=""
+                                                        class="d-flex align-items-center gap-1 text-decoration-none text-dark fw-bold">
+                                                        <i class="bi bi-search white fs-4 text-dark"></i>
+                                                        <div>TÌM KIẾM</div>
+                                                    </a>
+                                                </button>
+                                                <ul class="dropdown-menu p-0">
+                                                    <form action="">
+                                                        <input type="search" name="" id="" placeholder="Tìm kiếm"
+                                                            class="p-2 rounded-2 w-100 ">
+                                                    </form>
+                                                </ul>
+                                            </div>
                                         </ul>
-                                        <div class="dropdown">
-                                            <button class="btn" type="button" data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                                <a href=""><i class="bi bi-search white fs-4 text-dark"></i></a>
-                                            </button>
-                                            <ul class="dropdown-menu p-0">
-                                                <form action="">
-                                                    <input type="search" name="" id="" placeholder="Tìm kiếm"
-                                                        class="p-2 rounded-2">
-                                                </form>
-                                            </ul>
-                                        </div>
+    
                                     </div>
                                 </div>
                             </div>
