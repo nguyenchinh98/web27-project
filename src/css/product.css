@@ -245,6 +245,9 @@ table thead tr th {
         margin-top: 77.81px;
         padding: 6px;
     }
+    .main-path, .main-sub{
+        font-size: 16px;
+    }
     .heading-feedback{
         font-size: 18px;
         padding: 8px;
