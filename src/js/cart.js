@@ -43,8 +43,6 @@ const decrement = (event) => {
 };
 
 
-
-
 $(function () {
   const items = _.map(_.cloneDeep(cart), (item) => {
     item.product = _.find(products1, { id: item.product });
