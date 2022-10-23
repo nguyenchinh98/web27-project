@@ -11,7 +11,7 @@ import { products1, products2, products3, products } from "./db";
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const deleteItem = (event) => {
-  if (confirm("Bạn Chắc chắn muốn xóa sản phẩm này?")) {
+  if (confirm("Bạn chắc chắn muốn xóa sản phẩm này?")) {
     cart = _.filter(cart, (item) => item.product !== event.data.product.id);
 
     localStorage.setItem("cart", JSON.stringify(cart));
