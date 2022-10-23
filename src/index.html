@@ -19,7 +19,7 @@
             </a>
           </div>
           <ul class="main-menu col-8 d-flex justify-content-center gap-lg-2">
-            <li><a href="index.html">TRANG CHỦ</a></li>
+            <li><a href="">TRANG CHỦ</a></li>
             <li><a href="about.html">GIỚI THIỆU
 
               </a></li>
@@ -61,58 +61,7 @@
               </ul>
             </div>
             <div>
-              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight">
-                <i class="bi bi-cart3 white fs-4"></i>
-              </button>
-
-              <div class="offcanvas offcanvas-end bg-cart" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasRightLabel">GIỎ HÀNG</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <div class="table-reponsive">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>SẢN PHẨM</th>
-                          <th class="text-center">GIÁ</th>
-                          <th class="text-center">SỐ LƯỢNG</th>
-                          <th class="text-center">TẠM TÍNH</th>
-                          <th class="text-center"></th>
-                        </tr>
-                      </thead>
-                      <tbody class="cart-list">
-                        <template id="item">
-                          <tr class="item">
-                            <td class="d-flex align-items-center">
-                              <img src="${product.thumnail}" alt="" style="width:50px" class="thumnail-product">
-                              <div class="description-product">${product.description} </div>
-                            </td>
-                            <td class="text-center">${product.price}</td>
-                            <td class="text-center">
-                              <button class="ebb btn-down">-</button>
-                              <span class="quantity">${ quantity}</span>
-                              <button class="rise btn-up">+</button>
-                            </td>
-                            <td class="text-center">250.000 vnđ</td>
-                            <td><button class="btn-del"><i class="bi bi-x-circle fs-4"></i></button></td>
-                          </tr>
-                        </template>
-                        <tr>
-                          <td class="pt-4 fw-bold">Tổng Tiền: 0 VNĐ</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="d-flex flex-column gap-2 mt-3">
-                      <button class="watch-cart"><a href="cart.html" class="text-decoration-none text-light">XEM GIỎ HÀNG</a></button>
-                      <button class="order-cart"><a href="pay.html" class="text-decoration-none text-light">TIẾN HÀNH ĐẶT HÀNG</a></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <button class="btn "><a href="cart.html"><i class="bi bi-cart3 white fs-4"></i></a></button>
             </div>
 
             <nav class="navbar d-xl-none d-block d-lg-none">
@@ -132,7 +81,7 @@
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                       <li class="nav-item d-flex align-items-center gap-2 ps-3">
                         <i class="bi bi-house-door"></i>
-                        <a class="nav-link active fw-bold" aria-current="page" href="index.html">TRANG CHỦ</a>
+                        <a class="nav-link active fw-bold" aria-current="page" href="">TRANG CHỦ</a>
                       </li>
                       <li class="nav-item d-flex align-items-center gap-2 ps-3">
                         <i class="bi bi-file-person"></i>

@@ -42,10 +42,12 @@ const decrement = (event) => {
   localStorage.setItem("cart", JSON.stringify(cart));
 };
 
+
+
+
 $(function () {
   const items = _.map(_.cloneDeep(cart), (item) => {
     item.product = _.find(products1, { id: item.product });
-
     return item;
   });
 
@@ -67,7 +69,6 @@ $(function () {
 $(function () {
   const items = _.map(_.cloneDeep(cart), (item) => {
     item.product = _.find(products2, { id: item.product });
-
     return item;
   });
 
@@ -89,7 +90,6 @@ $(function () {
 $(function () {
   const items = _.map(_.cloneDeep(cart), (item) => {
     item.product = _.find(products3, { id: item.product });
-
     return item;
   });
 
@@ -111,7 +111,6 @@ $(function () {
 $(function () {
   const items = _.map(_.cloneDeep(cart), (item) => {
     item.product = _.find(products, { id: item.product });
-
     return item;
   });
 
@@ -129,3 +128,6 @@ $(function () {
     })
   );
 });
+
+
+

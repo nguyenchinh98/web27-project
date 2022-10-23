@@ -203,7 +203,7 @@ table{
         font-size: 14px;
     }
     table thead tr th{
-        font-size: 8px;
+        font-size: 12px;
     }
     table tbody tr.item{
         font-size: 8px;
@@ -276,6 +276,11 @@ table{
         font-weight: 700;
         margin: 0 10px;
     }
+    .font-path{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
 
     .icon-header>.dropdown {
         display: block;

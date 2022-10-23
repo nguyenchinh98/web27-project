@@ -271,7 +271,12 @@
         font-size: 12px;
     }
     
-    
+    .average-rating{
+        font-size: 32px;
+    }
+    .warning{
+        width: 100%;
+    }
 }
 /* ********** */
 @media (min-width:576px) {
@@ -337,6 +342,12 @@
     }
     .sub-feedback{
         font-size: 18px;
+    }
+    .average-rating{
+        font-size: 48px;
+    }
+    .warning{
+        width: 700px;
     }
 
 }

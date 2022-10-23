@@ -42,23 +42,7 @@ $(function () {
     );
 });
 
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-$(function () {
-  const items = _.map(_.cloneDeep(cart), (item) => {
-    item.product = _.find(products1, { id: item.product });
 
-    return item;
-  });
-
-  $(".cart-list").prepend(
-    _.map(items, (i) => {
-      const itemTemplate = $("#item").html();
-      const item = _.template(itemTemplate);
-      const dom = $(item(i));
-      return dom;
-    })
-  );
-});
 
 
 

@@ -1,3 +1,5 @@
+import _ from "lodash";
+
 export const products1 = [
   {
     id: 1,

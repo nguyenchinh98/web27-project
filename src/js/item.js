@@ -10,7 +10,6 @@ import { products1, products2, products3, products} from "./db";
 import { addToCart} from "./utils";
 
 
-
 $(function(){
     const url = new URL(this.location.href);
     const id = Number(url.searchParams.get("id"));
@@ -19,7 +18,9 @@ $(function(){
     const productItemTemplate = $("#productItem").html();
     const template = _.template(productItemTemplate);
     const dom = $(template(product));
+
     dom.find(".btn-cart").on("click", product, addToCart);
+
     $(".item-product").append(dom)
 });
 
@@ -51,9 +52,11 @@ $(function () {
   const url = new URL(this.location.href);
   const id = Number(url.searchParams.get("id"));
   const product4 = _.find(products, { id });
+
   const productItemTemplate4 = $("#productItem").html();
   const template4 = _.template(productItemTemplate4);
   const dom4 = $(template4(product4));
+  
   dom4.find(".btn-cart").on("click", product4, addToCart);
   $(".item-product").append(dom4);
 });
