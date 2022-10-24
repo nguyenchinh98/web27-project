@@ -23,6 +23,7 @@ export default defineConfig({
         signup: resolve(__dirname, "src/signup.html"),
         signin: resolve(__dirname, "src/signin.html"),
         blog: resolve(__dirname, "src/blog.html"),
+        blog1: resolve(__dirname, "src/blog1.html"),
           
       },
     },

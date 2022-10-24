@@ -1,0 +1,188 @@
+.thumnail-blog{
+    text-align: center;
+}
+.date-blog {
+    width: 70px;
+    height: 60px;
+    background-color: rgb(219, 219, 23);
+    padding: 8px;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+}
+
+
+
+
+
+/* Mobile */
+@media screen and (min-width:390px) {
+
+    .main-menu li a {
+        display: none;
+    }
+
+    .icon-header>.dropdown {
+        display: none;
+    }
+
+    .path {
+        margin-top: 56.36px;
+        padding: 4px 0;
+    }
+    .main-path, .main-sub{
+        font-size: 14px;
+    }
+    .paragraph{
+        font-size: 16px;
+    }
+    
+    .title-blog {
+        font-size: 28px;
+        font-family: Vollkorn;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .btn-blog {
+        padding: 8px 10px;
+        border: 1px solid;
+        border-radius: 8px;
+        background-color: #328D9D;
+        color: white;
+    }
+    .bg-blog {
+    background-color: #81cddd;
+    padding: 10px;
+    border-radius: 8px;
+    }
+    .heading-feedback{
+        font-size: 16px;
+    }
+    .sub-feedback{
+        font-size: 12px;
+    }
+    .title-footer{
+        font-size: 14px;
+    }
+    .text-footer-bottom{
+        font-size: 12px;
+    }
+    .atm{
+        font-size: 12px;
+    }
+
+}
+
+/* *************** */
+@media (min-width:576px) {
+    .title-footer{
+        font-size: 16px;
+        padding-top: 24px;
+    }
+    .about-footer{
+        padding-top: 30px;
+    }
+}
+/* Tablet-Mini - md */
+
+@media (min-width: 768px){
+     .main-menu li a {
+        display: none;
+    }
+    .icon-header>.dropdown {
+        display: none;
+    }
+    .path {
+        margin-top: 77.81px;
+        padding: 8px;
+    }
+    .title-blog {
+        font-size: 32px;
+        font-family: Vollkorn;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .btn-blog {
+        padding: 12px 16px;
+     }
+
+    .heading-feedback{
+        font-size: 18px;
+        padding: 8px;
+    }
+    .sub-feedback{
+       font-size: 16px;
+    }
+
+    .title-footer{
+        font-size: 16px;
+    }
+    
+}
+
+/* Tablet - lg*/
+@media (min-width:990px) {
+    .path {
+        margin-top: 88px;
+        padding: 8px;
+    }
+    .main-menu li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 8px;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+    .btn-blog {
+        padding: 12px 16px;
+     }
+    .main-path, .main-sub{
+        font-size: 16px;
+    }
+    .heading-feedback{
+        font-size: 22px;
+        padding: 8px;
+    }
+    .sub-feedback{
+        font-size: 18px;
+    }
+
+}
+
+/* Desktop - xl */
+@media (min-width:1280px) {
+
+    .main-menu li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 16px;
+    }
+
+    .icon-header>.dropdown {
+        display: block;
+    }
+
+    .path {
+        margin-top: 88px;
+        padding: 8px;
+    }
+
+    .paragraph{
+        font-size: 16px;
+    }
+    .title-blog {
+        font-size: 38px;
+        font-family: Vollkorn;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .btn-blog {
+        padding: 12px 16px;
+     }
+}

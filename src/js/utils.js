@@ -1,5 +1,7 @@
 import _ from "lodash";
 
+
+
 export const addToCart = (event) => {
   event.preventDefault();
   console.log(event.data);
@@ -16,3 +18,4 @@ export const addToCart = (event) => {
   localStorage.setItem("cart", JSON.stringify(cart));
   alert("Thêm thành công sản phẩm vào giỏ hàng");
 };
+

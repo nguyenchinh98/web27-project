@@ -46,9 +46,6 @@ $(function () {
 
 
 
-
-
-
 $(document).ready(function () {
   $(".list-blog").slick({
     slidesToShow: 3,
