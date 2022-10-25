@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Blog-Item</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@
                     <ul class="main-menu col-8 d-flex justify-content-center gap-lg-2">
                         <li><a href="index.html">TRANG CHỦ</a></li>
                         <li><a href="about.html">GIỚI THIỆU
-    
+
                             </a></li>
                         <li>
                             <a href="product.html">SẢN PHẨM
@@ -33,7 +33,7 @@
                                 <li><a href="list2_product.html">Mũ bucket</a></li>
                                 <li><a href="list3_product.html">Mũ nồi beret</a></li>
                                 <li><a href="list4_product.html">Mũ len</a></li>
-    
+
                             </ul>
                         </li>
                         <li><a href="blog.html">BLOG</a></li>
@@ -61,12 +61,13 @@
                             </ul>
                         </div>
                         <div>
-                            <button class="btn "><a href="cart.html"><i class="bi bi-cart3 white fs-4"></i></a></button>
+                            <button class="btn"><a href="cart.html" class="btn-icon-cart"><i
+                                        class="bi bi-cart3 white fs-4"></i></a></button>
                         </div>
-    
+
                         <nav class="navbar d-xl-none d-block d-lg-none">
                             <div class="container justify-content-end p-0">
-    
+
                                 <button class="btn-menu">
                                     <a class="" type="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                                         aria-controls="offcanvasNavbar">
@@ -92,7 +93,7 @@
                                                 <a class="nav-link active fw-bold" aria-current="page"
                                                     href="about.html">GIỚI THIỆU</a>
                                             </li>
-    
+
                                             <li class="nav-item dropdown d-flex align-items-center gap-2 ps-3">
                                                 <i class="bi bi-gift"></i>
                                                 <a class="nav-link active dropdown-toggle fw-bold" href="product.html"
@@ -100,16 +101,20 @@
                                                     SẢN PHẨM
                                                 </a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="list_product.html">Mũ lưỡi trai</a>
+                                                    <li><a class="dropdown-item" href="list_product.html">Mũ lưỡi
+                                                            trai</a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="list1_product.html">Mũ Snapback</a>
+                                                    <li><a class="dropdown-item" href="list1_product.html">Mũ
+                                                            Snapback</a>
                                                     </li>
                                                     <li><a class="dropdown-item" href="list2_product.html">Mũ Bucket</a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="list3_product.html">Mũ Nồi Beret</a>
+                                                    <li><a class="dropdown-item" href="list3_product.html">Mũ Nồi
+                                                            Beret</a>
                                                     </li>
-                                                    <li><a class="dropdown-item" href="list4_product.html">Mũ Len</a></li>
-    
+                                                    <li><a class="dropdown-item" href="list4_product.html">Mũ Len</a>
+                                                    </li>
+
                                                 </ul>
                                             </li>
                                             <li class="nav-item d-flex align-items-center gap-2 ps-3">
@@ -154,7 +159,7 @@
                                                 </ul>
                                             </div>
                                         </ul>
-    
+
                                     </div>
                                 </div>
                             </div>
@@ -163,7 +168,7 @@
                 </div>
             </div>
         </div>
-    
+
     </div>
 
     <div class=" path bg-item ">
@@ -171,181 +176,160 @@
             <a href="index.html" class="main-sub">Trang chủ</a> / <a href="blog.html" class="main-path">Blog</a>
         </div>
     </div>
-    <div class="container p-20">
-        <div class="d-flex flex-column align-items-center my-3">
-            <div class="heading-blog">BLOG</div>
-            <hr size="7px" width="80px" color="gray" class="m-0">
+
+    <div class="container-body my-3">
+        <div class="thumnail-blog">
+            <img src="/img/blog2-1.svg" alt="">
+            <div class="date-blog">
+                18 Th10
+            </div>
+        </div>
+        <h4 class="heading-blog">Mũ tai bèo vành rộng Nam Nữ Classic cao cấp, thoáng khí</h4>
+        <hr width="50px" color="#328D9D" size="5px">
+        <div class="date-post">ĐĂNG LÚC 18/10/2022 BỞI QCCAP</div>
+        <div class="paragraph mt-3">Bạn đang muốn tìm mua một chiếc mũ tai bèo vành rộng giúp che nắng hiệu quả và trông
+            thật thời trang. Cùng tham khảo ngay kiểu mũ tai bèo vành rộng của <a href=""
+                class="text-decoration-none">QCCap</a> nhé!
         </div>
 
-        <div class="row align-items-center bg-blog my-2">
-            <div class=" col-lg-7 col-md-7">
-                <div class="title-blog py-3">10 Cách phối đồ với áo ba lỗ nam tính và cuốn hút nhất</div>
-                <div class="paragraph">Cùng QCCap tham khảo ngay những cách phối đồ với áo ba lỗ nam tính và thu hút
-                    nhất dưới đây nhé!
-                    Đây sẽ là item thích hợp cho bạn để tôn lên nét đẹp phóng khoáng và những đường cơ bắp săn chắc.
-                </div>
+        <div class="accordion my-4" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fw-bolder text-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Mục lục
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                        <ul id="appendix">
+                            <li><a href="#1">1 Thiết kế nón tai bèo vành rộng giúp che nắng hiệu quả</a></li>
+                            <li>
+                                <a href="#2">2 Chất liệu vải 100% cotton cao cấp, thoáng khí</a>
 
-                <div class="d-flex justify-content-between paragraph mt-xl-5 mt-3 gap-2 align-items-center">
-                    <a href="blog1.html" class="text-decoration-none">
-                        <div class="d-flex gap-xl-5 btn-blog align-items-center gap-3 gap-md-3 gap-lg-4">
-                            <div>Đọc bài viết</div>
-                            <i class="bi bi-arrow-right"></i>
-                        </div>
-                    </a>
-
-                    <div>
-                        25/10/2022 bởi QCCap
+                            </li>
+                            <li><a href="#3">3 Thiết kế theo phong cách thời trang tối giản</a></li>
+                            <li><a href="#4">4 Kiểu dáng mũ bucket Classic dễ phối đồ</a></li>
+                            <li><a href="#5">5 Sử dụng được cho cả nam và nữ</a></li>
+                            <li><a href="#6">6 Kiểu dáng mũ bucket Classic dễ phối đồ</a></li>
+                            <li><a href="#7">7 Lời Kết:</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class=" col-lg-5 col-md-5 text-end py-3">
-                <img src="/img/img-blog1.svg" alt="" class="thumnail-blog">
+        </div>
+
+        <div class="" data-bs-spr="scroll" data-ba-target="#appendix">
+            <div class="" id="1">
+                <h4 class="my-3 fw-bolder">Thiết kế nón tai bèo vành rộng giúp che nắng hiệu quả</h4>
+                <div class="paragraph">Mũ tai bèo vành rộng đang là món phụ kiện hot nhất mùa hè này. Mùa hè là thời
+                    điểm mà những món phụ kiện như mũ bucket
+                    trở thành “cơn sốt”. Sở hữu phần vành nón rộng, được may dốc xuống phía dưới, mũ rộng vành vừa giúp
+                    che chắn cho bạn
+                    khỏi tác hại của ánh nắng gay gắt.
+                </div>
+                <div class="text-center my-3">
+                    <img src="/img/blog2-2.svg" alt="" style="width:600px">
+                </div>
+                <div class="paragraph">Sở hữu phần vành rộng che kín gần như nửa khuôn mặt và độ dốc xuống cao hơn nên
+                    chiếc mũ tai bèo này cực kỳ thích hợp
+                    trong việc che chắn, bảo vệ cho khuôn mặt xinh xắn của bạn khỏi ánh nắng mặt trời. Bên cạnh đó, khi
+                    đội mũ tai bèo vành
+                    rộng, trông bạn sẽ có nét vừa cá tính, vừa bí ẩn cực kỳ cuốn hút.
+                </div>
+            </div>
+
+            <div id="2">
+                <h4 class="my-3 fw-bolder">Chất liệu vải 100% cotton cao cấp, thoáng khí</h4>
+                <div class="paragraph">Mũ tai bèo rộng vành thường được làm từ đa dạng hơn về chất liệu như vải thô,
+                    denim, da … thế nhưng chất liệu vải 100%
+                    cotton từ bông tinh khiết vẫn được người dùng ưu tiên lựa chọn.</div>
+                <div class="paragraph">Mũ rộng vành vải 100% cotton có ưu điểm thoáng mát và mềm hơn. Những chiếc mũ
+                    được làm từ cotton khi lên dáng cũng rất
+                    đẹp, tự nhiên mà không bị quá cứng nhắc.
+                </div>
+                <div class="text-center my-3">
+                    <img src="/img/blog2-3.svg" alt="" style="width:600px">
+                </div>
+                <div class="paragraph">Bên cạnh đó, mũ vải từ bông tinh khiết tự nhiên còn có khả năng thấm hút mồ hôi rất tốt nhờ các sợi bông thoáng khí trên
+                bề mặt vải.Có thể gấp gọn và mang theo trong mỗi chuyến đi rất thuận tiện. Mũ được làm từ chất liệu vải mềm giúp da đầu
+                không bị nóng tóc bạn không bị bết tóc do ra nhiều mồ hôi, vừa có tác dụng che nắng tốt mà lại rất tiện dụng.
+                </div>
             </div>
         </div>
 
-        <div class="row align-items-center bg-blog my-2">
-            <div class=" col-lg-5 col-md-5 text-end py-3">
-                <img src="/img/img-blog2.svg" alt="" class="thumnail-blog">
+
+        <div id="3">
+            <h4 class="my-3 fw-bolder">Thiết kế theo phong cách thời trang tối giản</h4>
+            <div class="paragraph">Phong cách thời trang tối giản luôn là cơn sốt trend được mọi người yêu thích. Phong cách này tuy không cầu kỳ nhưng vẫn
+            tạo được hiệu ứng thị giác bắt mắt, cá tính.
             </div>
-
-            <div class=" col-lg-7 col-md-7">
-                <div class="title-blog py-3">Mũ tai bèo vành rộng Nam Nữ Classic cao cấp, thoáng khí</div>
-                <div class="paragraph">Bạn đang muốn tìm mua một chiếc mũ tai bèo vành rộng giúp che nắng hiệu quả và
-                    trông thật thời trang. Cùng tham khảo ngay kiểu mũ tai bèo vành rộng của QCcap nhé!
-                </div>
-                <div class="d-flex justify-content-between paragraph mt-xl-5 mt-3 gap-2 align-items-center">
-
-                    <div>
-                        18/10/2022 bởi QCCap
-                    </div>
-                    <a href="blog2.html" class="text-decoration-none">
-                        <div class="d-flex gap-xl-5 btn-blog gap-3 gap-md-3 gap-lg-4">
-                            <i class="bi bi-arrow-left"></i>
-                            <div>Đọc bài viết</div>
-                        </div>
-                    </a>
-
-                    
-                </div>
+            <div class="text-center my-3">
+                <img src="/img/blog2-4.svg" alt="" style="width:600px">
             </div>
+            <div class="paragraph">Sử dụng 2 gam màu đen và be luôn là xu thế thịnh hành bởi hai gam màu cơ bản này không bị ảnh hưởng bởi thời gian hay
+            nói cách khác là không lỗi mốt. Ngoài ra phong cách tối giản rất tiện dụng trong mọi bối cảnh, mang hơi hướng unisex và
+            dễ dàng phối đồ.</div>
+        </div>
+        <div id="4">
+            <h4 class="my-3 fw-bolder">Kiểu dáng mũ bucket Classic dễ phối đồ</h4>
+            <div class="paragraph">Với kiểu dáng khá đơn giản cùng những chất liệu mềm mại, mũ tai bèo mang đến cho bạn vẻ ngoài gần gũi, thoải mái nhưng
+            cũng rất cool và cá tính. Có lẽ cũng chính nhờ hàng loạt ưu điểm này mà mũ tai bèo luôn chiếm được cảm tình của các bạn
+            trẻ dù đã xuất hiện từ rất lâu.</div>
+            <div class="text-center my-3">
+                <img src="/img/blog2-5.svg" alt="" style="width:600px">
+            </div>
+            <div class="paragraph">Ngoài ra, mũ tai bèo vành rộng giúp mang đến những đường nét mềm mại hơn nên sẽ là kiểu dáng yêu thích của những cô nàng
+            theo đuổi phong cách dịu dàng, nữ tính. Bên cạnh những set đồ trẻ trung, cá tính thì bạn cũng có thể diện cùng các mẫu
+            váy đầm điệu đà đều rất thích hợp.</div>
+        </div>
+
+        <div id="5">
+            <h4 class="my-3 fw-bolder">Sử dụng được cho cả nam và nữ</h4>
+            <div class="paragraph">Mũ tai bèo nam nữ vành rộng là sản phẩm free size, có kích thước vòng đầu phù hợp với số đo trung bình của đầu người
+            đội. Với các số đo vòng đầu từ 56 – 63cm, người dùng hoàn toàn có thể yên tâm sử dụng sản phẩm.</div>
+            <div class="text-center my-3">
+                <img src="/img/blog2-6.svg" alt="">
+            </div>
+            <div class="paragraph">Vì là một dòng mũ bucket được nhiều người yêu thích nên mũ có những cải tiến trong thiết kế để người dùng có thêm nhiều
+            sự lựa chọn hơn.</div>
 
         </div>
 
-        <div class="row align-items-center bg-blog">
-            <div class="col-lg-7 col-md-7">
-                <div class="title-blog py-3">7 Cách chụp ảnh với mũ lưỡi trai “nghìn like kèm ảnh minh hoạ
-                </div>
-                <div class="paragraph">Bạn đang đau đầu tìm cách chụp ảnh với mũ lưỡi trai sao cho “chất nhất quả đất”?
-                    Đừng lo lắng, hãy tham khảo những cách chụp ảnh với mũ lưỡi trai “nghìn like” kèm ảnh minh hoạ của
-                    QCCap nhé!
-                </div>
-                <div class="d-flex justify-content-between paragraph mt-xl-5 mt-3 gap-2 align-items-center">
-                    <a href="blog3.html" class="text-decoration-none">
-                        <div class="d-flex gap-xl-5 btn-blog align-items-center gap-md-3 gap-lg-4 gap-3">
-                            <div>>Đọc bài viết</div>
-                            <i class="bi bi-arrow-right"></i>
-                        </div>
-                    </a>
-
-                    <div>
-                        10/10/2022 bởi QCCap
-                    </div>
-                </div>
+        <div id="6">
+            <h4 class="my-3 fw-bolder">Mũ tai bèo vành rộng là sự lựa chọn hoàn hảo</h4>
+            <div class="paragraph">Không chỉ riêng mùa hè mà hầu như bất kể mùa nào trong năm, cứ bước ra đường là bạn sẽ dễ dàng bắt gặp bóng dáng của
+            những chiếc mũ tai bèo thấp thoáng. Điều này không chỉ đơn giản vì mũ tai bèo có thể giúp bạn chống nắng hiệu quả mà còn
+            phụ thuộc vào độ thẩm mỹ và thời trang mà chúng mang lại rất cao.</div>
+            <div class="text-center my-3">
+                <img src="/img/blog2-7.svg" alt="">
             </div>
-            <div class=" col-lg-5 col-md-5 text-end py-3">
-                <img src="/img/img-blog3.svg" alt="" class="thumnail-blog">
-            </div>
+            <div class="paragraph">Cho đến ngày này, mũ Bucket tai bèo đã được đa dạng hóa về thiết kế cũng như kiểu dáng nhằm đáp ứng tính thời trang cũng
+            như sự tiện lợi cho người sử dụng. Không chỉ được dùng hàng ngày mà mũ Bucket còn là một món đồ đi biển không thể thiếu
+            trong mỗi chuyến đi.</div>
         </div>
 
-        <div class="row align-items-center bg-blog my-2">
-            <div class=" col-lg-5 col-md-5 text-end py-3">
-                <img src="/img/img-blog4.svg" alt="" class="thumnail-blog">
-            </div>
-
-            <div class=" col-lg-7 col-md-7">
-                <div class="title-blog py-3">4 Kiểu mũ mùa hè giúp bạn phối đồ chuẩn fashion</div>
-                <div class="paragraph">Không phải ngẫu nhiên mà mũ mùa hè trở thành từ khoá tìm kiếm mỗi khi trời trở
-                    nắng. Dưới đây sẽ là những kiểu mũ mùa hè với khả năng chống nắng hiệu quả và dễ dàng phối đồ tạo
-                    điểm nhấn phong cách cho riêng bạn. Cùng tham khảo ngay nhé!
-                </div>
-                <div class="d-flex justify-content-between paragraph mt-xl-5 mt-3 gap-2 align-items-center">
-
-                    <div>
-                        10/10/2022 bởi QCCap
-                    </div>
-                    <a href="blog4.html" class="text-decoration-none">
-                        <div class="d-flex gap-xl-5 btn-blog gap-3 gap-md-3 gap-lg-4">
-                            <i class="bi bi-arrow-left"></i>
-                            <div>Đọc bài viết</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
+        <div id="7">
+            <h4 class="my-3 fw-bolder">Lời Kết</h4>
+            <div class="paragraph">Mũ bucket – mũ tai bèo rộng vành pink có thể nói là một phụ kiện không thể thiếu đối với vùng khí hậu nhiệt đới có mùa
+            Hè gay gắt như Việt Nam. Nếu bạn đang cần mua mũ tai bèo vành rộng thì đây chắc chắn sẽ là một sự lựa chọn phù hợp.</div>
         </div>
 
-        <div class="row align-items-center bg-blog">
-            <div class=" col-lg-7 col-md-7">
-                <div class="title-blog py-3">Top 5 Shop bán mũ bucket ở Hà Nội Đẹp, Uy tín
-                </div>
-                <div class="paragraph">QCCap xin giới thiệu đến bạn Top 5 shop bán mũ bucket ở Hà Nội đẹp, uy tín và chất lượng được đông đảo bạn trẻ Hà thành
-                ghé đến hiện nay. Nếu bạn đang cần tìm cho mình một chiếc mũ bucket đẹp và hợp mốt thì hãy ghé thăm những địa chỉ này
-                nhé!
-                </div>
-                <div class="d-flex justify-content-between paragraph mt-xl-5 mt-3 gap-2 align-items-center">
-                    <a href="blog6.html" class="text-decoration-none">
-                        <div class="d-flex gap-xl-5 btn-blog align-items-center gap-md-3 gap-lg-4 gap-3">
-                            <div>Đọc bài viết</div>
-                            <i class="bi bi-arrow-right"></i>
-                        </div>
-                    </a>
-                    <div>
-                        05/10/2022 bởi QCCap
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5 col-md-5 text-end py-3">
-                <img src="/img/img-blog5.svg" alt="" class="thumnail-blog">
-            </div>
-        </div>
-        
-        <div class="row align-items-center bg-blog my-2">
-            <div class=" col-lg-5 col-md-5 text-end py-3">
-                <img src="/img/img-blog7.svg" alt="" class="thumnail-blog">
-            </div>
-        
-            <div class=" col-lg-7 col-md-7">
-                <div class="title-blog py-3">Tóc ngắn mặc gì đẹp? Mách bạn cách phối đồ cực chất</div>
-                <div class="paragraph">Nếu đang tìm kiếm một outfit đủ ấn tượng cho câu hỏi “tóc ngắn mặc gì đẹp” nhưng cũng phải đủ thoải mái để vận động, bay
-                nhảy cả ngày thì đừng bỏ qua...
-                </div>
-                <div class="d-flex justify-content-between paragraph mt-xl-5 mt-3 gap-2 align-items-center">
-                    <div>
-                        25/09/2022 bởi QCCap
-                    </div>
-                    <a href="blog5.html" class="text-decoration-none">
-                        <div class="d-flex gap-xl-5 btn-blog gap-3 gap-md-3 gap-lg-4">
-                            <i class="bi bi-arrow-left"></i>
-                            <div>Đọc bài viết</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        
-        </div>
-
-        <div class="d-flex justify-content-center my-5 gap-3">
-            <a href="" class="page-2"><i class="bi bi-caret-left"></i></a>
-            <div class="page-1"><a href="" class="text-decoration-none text-light">1</a></div>
-            <div class="page-2"><a href="" class="text-decoration-none text-dark">2</a></div>
-            <div class="page-2"><a href="" class="text-decoration-none text-dark">...</a></div>
-            <div class="page-2"><a href="" class="text-decoration-none text-dark">10</a></div>
-            <a href="" class="page-2"><i class="bi bi-caret-right "></i></a>
+        <div class="post-nice mt-4 py-3">
+            <h5>Bài viết hữu ích:</h5>
+            <ul>
+                <li><a href="">Mũ câu cá, dã ngoại rộng vành đa năng, gấp gọn</a></li>
+                <li><a href="">Mũ tai bèo lính Mỹ hoạ tiết CAMO chiến binh nổi bật</a>
+                </li>
+                <li><a href="">Mũ lưỡi trai có kính chống bụi dành cho tín đồ sành mốt</a></li>
+            </ul>
         </div>
 
     </div>
 
-    <div class="bg-item text-center text-feedback">
+    <div class="bg-item text-center mt-xl-5 mt-5 text-feedback">
+
         <h5 class="fw-bold heading-feedback">BẠN CÓ HÀI LÒNG VỚI SẢN PHẨM VÀ DỊCH VỤ CỦA <a href="index.html"
                 class="feedback">QCcap</a> KHÔNG?</h5>
         <h6 class="pt-2 fw-semibold sub-feedback">XIN HÃY CHO CHÚNG TÔI BIẾT Ý KIẾN CỦA BẠN <a href="contact.html"
@@ -353,7 +337,7 @@
                 ĐÂY</a>
         </h6>
     </div>
-    
+
     <footer>
         <div class="footer-top">
             <div class="container">
@@ -363,9 +347,9 @@
                         <p class="pt-3 paragraph">QCcap - chuyên kinh doanh các loại mũ nón thời trang cao cấp luôn cập
                             nhật
                             những mẫu mới nhất vì chúng tôi muốn bạn đẹp nhất.</p>
-    
+
                     </div>
-    
+
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 paragraph ">
                         <h5 class="fw-bold pb-2 title-footer">DANH MỤC SẢN PHẨM</h5>
                         <div class="ps-3 ">
@@ -375,39 +359,39 @@
                                     <p>Mũ lưỡi trai</p>
                                 </a>
                             </div>
-    
+
                             <div class="d-flex gap-2">
                                 <i class="bi bi-caret-right-fill"></i>
                                 <a href="" class="text-footer">
                                     <p>Mũ Snapblack</p>
                                 </a>
                             </div>
-    
+
                             <div class="d-flex gap-2">
                                 <i class="bi bi-caret-right-fill"></i>
                                 <a href="" class="text-footer">
                                     <p>Mũ Bucket</p>
                                 </a>
                             </div>
-    
+
                             <div class="d-flex gap-2">
                                 <i class="bi bi-caret-right-fill"></i>
                                 <a href="" class="text-footer">
                                     <p>Mũ nồi Beret</p>
                                 </a>
                             </div>
-    
+
                             <div class="d-flex gap-2">
                                 <i class="bi bi-caret-right-fill"></i>
                                 <a href="" class="text-footer">
                                     <p>Mũ len</p>
                                 </a>
                             </div>
-    
-    
+
+
                         </div>
                     </div>
-    
+
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 paragraph ">
                         <h5 class="fw-bold pb-2 title-footer">CHÍNH SÁCH BÁN HÀNG</h5>
                         <div class="ps-3">
@@ -417,21 +401,21 @@
                                     <p>Chính sách vận chuyển</p>
                                 </a>
                             </div>
-    
+
                             <div class="d-flex gap-2">
                                 <i class="bi bi-caret-right-fill"></i>
                                 <a href="" class="text-footer">
                                     <p>Chính sách đổi trả</p>
                                 </a>
                             </div>
-    
+
                             <div class="d-flex gap-2">
                                 <i class="bi bi-caret-right-fill"></i>
                                 <a href="" class="text-footer">
                                     <p>Điều khoản dịch vụ</p>
                                 </a>
                             </div>
-    
+
                             <div class="d-flex gap-2">
                                 <i class="bi bi-caret-right-fill"></i>
                                 <a href="" class="text-footer">
@@ -440,7 +424,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 paragraph ">
                         <h5 class="fw-bold pb-2 title-footer">LIÊN HỆ VỚI CHÚNG TÔI</h5>
                         <div class=" ps-3">
@@ -458,13 +442,13 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="footer-bottom">
             <div class="container">
                 <div class="d-flex justify-content-between py-2 align-items-center">
                     <div class="text-footer-bottom">Bản quyền thuộc về QCcap - Copyright 2022 @QCcap.com.vn</div>
-    
-    
+
+
                     <div class="d-flex gap-1 gap-sm-2">
                         <div class="atm">
                             ATM
@@ -472,34 +456,17 @@
                         <div class="atm">VISA</div>
                         <div class="atm">PayPal</div>
                     </div>
-    
+
                 </div>
             </div>
         </div>
     </footer>
 
-
     <div id="backtop">
         <i class="bi bi-caret-up-fill"></i>
     </div>
-    <div id="toolbar">
-        <ul>
-            <li><a href="">
-                    <img src="/img/icon-mess.svg" alt="" class="swing">
-                    <span>Facebook</span>
-                </a></li>
-            <li><a href="">
-                    <img src="/img/icon-zalo.svg" alt="" class="zalo">
-                    <span>Chat Zalo</span>
-                </a></li>
-            <li><a href="">
-                    <img src="/img/icon-phone.svg" alt="" class="swing">
-                    <span>Gọi ngay</span>
-                </a></li>
-        </ul>
-    </div>
 
-    <script src="./js/blog.js" type="module"></script>
+    <script src="./js/blogItem.js" type="module"></script>
 </body>
 
 </html>

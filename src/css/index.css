@@ -134,19 +134,22 @@
     padding: 8px 16px;
     border-radius: 8px;
     border: 2px solid #328D9D;
-}
-.btn-blog a{
-    text-decoration: none;
     color: #328D9D;
     font-weight: 600;
 }
+/* .btn-blog a{
+    text-decoration: none;
+    color: #328D9D;
+    font-weight: 600;
+} */
 
 .btn-blog:hover{
     background-color: #328D9D;
-}
-.btn-blog:hover a{
     color: white;
 }
+/* .btn-blog:hover a{
+    color: white;
+} */
 
 .blog-item:hover {
     box-shadow: 0 1px 5px 0px;

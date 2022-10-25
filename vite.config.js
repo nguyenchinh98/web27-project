@@ -24,6 +24,11 @@ export default defineConfig({
         signin: resolve(__dirname, "src/signin.html"),
         blog: resolve(__dirname, "src/blog.html"),
         blog1: resolve(__dirname, "src/blog1.html"),
+        blog2: resolve(__dirname, "src/blog2.html"),
+        blog3: resolve(__dirname, "src/blog3.html"),
+        blog4: resolve(__dirname, "src/blog4.html"),
+        blog5: resolve(__dirname, "src/blog5.html"),
+        blog6: resolve(__dirname, "src/blog6.html"),
           
       },
     },
