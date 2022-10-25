@@ -39,7 +39,6 @@ hr{
     font-weight: 500;
 }
 .accordion{
-    width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -51,15 +50,37 @@ hr{
     background-color: #aad8e1;
 
 }
-
+#appendix>li:hover>a{
+    text-decoration: solid;
+    color: white;
+}
+.appendix-sub li:hover a{
+    color: #1794e1;
+}
 
 
 .post-nice{
     background-color: #aad8e1;
+    border-radius: 8px;
+}
+.post-nice h5 {
+    padding: 0 20px;
+}
+.post-nice ul{
+    padding: 0 50px;
 }
 
 /* Mobile */
 @media screen and (min-width:390px) {
+    .container-body{
+        width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .accordion{
+        width: 370px;
+    }
+
 
     .main-menu li a {
         display: none;
@@ -108,6 +129,14 @@ hr{
 
 /* *************** */
 @media (min-width:576px) {
+    .container-body{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .accordion{
+        width: 400px;
+    }
     .title-footer{
         font-size: 16px;
         padding-top: 24px;
@@ -119,6 +148,14 @@ hr{
 /* Tablet-Mini - md */
 
 @media (min-width: 768px){
+    .container-body{
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .accordion{
+        width: 600px;
+    }
      .main-menu li a {
         display: none;
     }
@@ -155,6 +192,14 @@ hr{
 
 /* Tablet - lg*/
 @media (min-width:990px) {
+    .container-body{
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .accordion{
+        width: 700px;
+    }
     .path {
         margin-top: 88px;
         padding: 8px;
@@ -216,7 +261,7 @@ hr{
     }
     /* body --------- */
     .container-body{
-        width: 950px;
+        width: 900px;
         margin-left: auto;
         margin-right: auto;
     }
