@@ -43,6 +43,23 @@ $(function () {
 });
 
 
+let email = document.getElementById("email")
+let btnSendEmail = document.querySelector(".btn-email")
+btnSendEmail.addEventListener("click", (e) => {
+  e.preventDefault();
+  let user = {
+    email: email.value,
+  };
+  let json = JSON.stringify(user)
+  if (!email.value){
+    alert("Vui lòng nhập email của bạn")
+  } else {
+    localStorage.setItem(email.value, json);
+    alert("Đăng ký thành công");
+  }
+})
+
+
 
 
 

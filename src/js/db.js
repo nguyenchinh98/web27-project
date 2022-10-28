@@ -144,7 +144,7 @@ export const products3 = [
     img2: "/img/ctsp11_2.svg",
     img3: "/img/ctsp11_3.svg",
     img4: "/img/ctsp11_4.svg",
-    description: "Mũ Snapback trơn Classic màu đen - 2022",
+    description: "Mũ Snapback trơn Classic màu đen-2022",
     price: "175.000 VNĐ",
     category: "Mũ SnapBack HipHop",
     detailProduct:
