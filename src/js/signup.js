@@ -16,7 +16,7 @@ btnSignup.addEventListener("click", (e) => {
   };
 
   let json = JSON.stringify(user);
-  if (!email.value || !email.value) {
+  if (!email.value || !password.value) {
     aler("Vui lòng nhập đầy đủ thông tin");
   } else {
     localStorage.setItem(email.value, json);
